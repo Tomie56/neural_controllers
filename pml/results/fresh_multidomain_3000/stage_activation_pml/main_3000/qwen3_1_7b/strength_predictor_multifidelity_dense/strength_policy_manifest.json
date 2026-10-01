@@ -1,0 +1,18 @@
+{
+  "dense_train_dataset_dir": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage2_bidirectional_pilot_500/qwen3_1_7b/selector_dataset_tau_main_q95",
+  "validation_dataset_dir": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage2b_selector_validation_100/qwen3_1_7b/selector_dataset_tau_main_q95",
+  "selector_output_dir": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/main_3000/qwen3_1_7b/strength_predictor_multifidelity_dense",
+  "selector_task": "multifidelity__MAR__hist_gbdt",
+  "dense_selector_task": "dense_only__MAR__hist_gbdt",
+  "fixed_alphas_selected_on_training": {
+    "suppression": -1.0,
+    "enhancement": 1.0
+  },
+  "probe_count": 2.0,
+  "dense_scan_nonzero_coefficients": 26,
+  "validation_records": 100,
+  "validation_paths": 900,
+  "paired_bootstrap_unit": "record_id",
+  "paired_bootstrap_reps": 5000,
+  "seed": 113
+}

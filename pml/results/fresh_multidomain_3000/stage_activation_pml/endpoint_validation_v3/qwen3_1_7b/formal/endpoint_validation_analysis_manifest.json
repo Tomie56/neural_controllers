@@ -1,0 +1,31 @@
+{
+  "root_dir": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/endpoint_validation_v3/qwen3_1_7b/formal",
+  "n_result_paths": 8,
+  "n_records": 100,
+  "n_rows": 900,
+  "methods": [
+    "logistic",
+    "mean_difference",
+    "random",
+    "rfm_agop_top1"
+  ],
+  "layers": [
+    "-17",
+    "-21"
+  ],
+  "alphas": [
+    -1.0,
+    -0.5,
+    -0.25,
+    -0.1,
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "baseline_target_endpoint_correct_rate": 0.050347222222222224,
+  "all_rows_csv": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/endpoint_validation_v3/qwen3_1_7b/formal/endpoint_validation_all_rows.csv",
+  "bucket_summary_csv": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/endpoint_validation_v3/qwen3_1_7b/formal/endpoint_validation_bucket_summary.csv",
+  "overall_summary_csv": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/endpoint_validation_v3/qwen3_1_7b/formal/endpoint_validation_overall_summary.csv"
+}

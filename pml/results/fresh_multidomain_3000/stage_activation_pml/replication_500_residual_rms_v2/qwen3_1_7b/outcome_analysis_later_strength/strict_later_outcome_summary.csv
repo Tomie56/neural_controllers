@@ -1,0 +1,10 @@
+scope,method,layer,n_paths,later_suppression_path_rate,later_enhancement_path_rate,later_target_any_path_rate,later_neighbor_damage_any_path_rate,later_capability_damage_any_path_rate,later_clean_suppression_path_rate,later_clean_enhancement_path_rate,later_clean_any_path_rate
+method_layer,logistic,-17,500,0.058,0.064,0.122,0.078,0.074,0.056,0.058,0.114
+method_layer,logistic,-21,500,0.068,0.062,0.128,0.08,0.086,0.066,0.056,0.12
+method_layer,mean_difference,-17,500,0.06,0.046,0.1,0.076,0.08,0.05,0.042,0.086
+method_layer,mean_difference,-21,500,0.052,0.074,0.126,0.082,0.102,0.044,0.072,0.116
+method_layer,random,-17,500,0.048,0.048,0.096,0.076,0.09,0.048,0.044,0.092
+method_layer,random,-21,500,0.044,0.048,0.09,0.074,0.092,0.04,0.04,0.078
+method_layer,rfm_agop_top1,-17,500,0.042,0.058,0.098,0.082,0.074,0.038,0.052,0.088
+method_layer,rfm_agop_top1,-21,500,0.062,0.078,0.132,0.094,0.096,0.056,0.072,0.124
+overall,all,all,4000,0.05425,0.05975,0.1115,0.08025,0.08675,0.04975,0.0545,0.10225

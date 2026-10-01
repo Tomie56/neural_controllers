@@ -1,0 +1,21 @@
+{
+  "stage_root": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage2b_selector_validation_100/qwen3_1_7b",
+  "output_dir": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage2b_selector_validation_100/qwen3_1_7b/selector_dataset_tau_main_q95",
+  "tau": 0.15258546272913603,
+  "tau_source": "global_random_q95",
+  "tau_info": {
+    "global_random_q95": 0.16578510999679563,
+    "global_random_median_plus_2mad": 0.10672392571965854
+  },
+  "early_alphas": [
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "lambda_neighbor": 1.0,
+  "lambda_capability": 1.0,
+  "n_method_layer_paths": 9,
+  "n_path_rows": 900,
+  "n_alpha_rows": 24300
+}

@@ -1,0 +1,152 @@
+{
+  "stage_root": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500_residual_rms_v2/qwen3_5_2b_base/outcomes",
+  "output_dir": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500_residual_rms_v2/qwen3_5_2b_base/prediction_dataset_later_strength",
+  "dataset_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500_residual_rms_v2/qwen3_5_2b_base/prediction_dataset_later_strength/pml_path_prediction_dataset.csv",
+  "random_method": "random",
+  "null_quantile": 0.95,
+  "thresholds": {
+    "target": 0.11149613857269289,
+    "neighbor": 0.09329648514588666,
+    "capability": 0.07661823183298108
+  },
+  "early_alpha": 0.1,
+  "medium_alpha": 0.5,
+  "n_runs": 8,
+  "n_rows": 4000,
+  "n_records": 500,
+  "methods": [
+    "logistic",
+    "mean_difference",
+    "random",
+    "rfm_agop_top1"
+  ],
+  "layers": [
+    -18,
+    -15
+  ],
+  "datasets": [
+    "Rowan/hellaswag",
+    "TIGER-Lab/MMLU-Pro",
+    "allenai/ai2_arc",
+    "allenai/openbookqa",
+    "allenai/qasc",
+    "allenai/sciq",
+    "edinburgh-dawg/mmlu-redux-2.0",
+    "livebench/math",
+    "livebench/reasoning"
+  ],
+  "domains": [
+    "elementary_science",
+    "recent_corrected_biology",
+    "recent_corrected_chemistry",
+    "recent_corrected_computer_security",
+    "recent_corrected_global_facts",
+    "recent_corrected_machine_learning",
+    "recent_corrected_physics",
+    "recent_multidomain_academic",
+    "recent_objective_math",
+    "recent_objective_reasoning",
+    "science_composition",
+    "science_exam",
+    "science_qa",
+    "situated_commonsense"
+  ],
+  "feature_groups": {
+    "B": [
+      "base_capability_margin_max",
+      "base_capability_margin_mean",
+      "base_capability_margin_median",
+      "base_capability_margin_min",
+      "base_capability_mean_margin_mean",
+      "base_capability_positive_rate",
+      "base_neighbor_margin_max",
+      "base_neighbor_margin_mean",
+      "base_neighbor_margin_median",
+      "base_neighbor_margin_min",
+      "base_neighbor_mean_margin_mean",
+      "base_neighbor_positive_rate",
+      "base_target_capability_gap",
+      "base_target_margin_max",
+      "base_target_margin_mean",
+      "base_target_margin_median",
+      "base_target_margin_min",
+      "base_target_mean_margin_mean",
+      "base_target_neighbor_gap",
+      "base_target_positive_rate"
+    ],
+    "M": [
+      "method",
+      "layer",
+      "dataset",
+      "domain",
+      "freshness_group",
+      "release_year"
+    ],
+    "L": [
+      "feature_direction_pairwise_cosine_mean",
+      "feature_max_abs_cohen_d",
+      "feature_mean_abs_cohen_d",
+      "feature_mean_threshold_accuracy",
+      "feature_saliency_concentration",
+      "feature_saliency_entropy",
+      "feature_top_saliency_layer"
+    ],
+    "G": [
+      "feature_agop_layer_neg15_condition_number",
+      "feature_agop_layer_neg15_effective_rank",
+      "feature_agop_layer_neg15_eigengap_1_2",
+      "feature_agop_layer_neg15_eigengap_ratio_1_2",
+      "feature_agop_layer_neg15_fro_norm",
+      "feature_agop_layer_neg15_spectral_entropy",
+      "feature_agop_layer_neg15_top1_ratio",
+      "feature_agop_layer_neg15_top_vec_abs_cos_mean_diff",
+      "feature_agop_layer_neg15_top_vec_cohen_d",
+      "feature_agop_layer_neg15_top_vec_mean_gap",
+      "feature_agop_layer_neg15_top_vec_threshold_accuracy",
+      "feature_agop_layer_neg15_topk_ratio",
+      "feature_agop_layer_neg15_trace",
+      "feature_agop_layer_neg18_condition_number",
+      "feature_agop_layer_neg18_effective_rank",
+      "feature_agop_layer_neg18_eigengap_1_2",
+      "feature_agop_layer_neg18_eigengap_ratio_1_2",
+      "feature_agop_layer_neg18_fro_norm",
+      "feature_agop_layer_neg18_spectral_entropy",
+      "feature_agop_layer_neg18_top1_ratio",
+      "feature_agop_layer_neg18_top_vec_abs_cos_mean_diff",
+      "feature_agop_layer_neg18_top_vec_cohen_d",
+      "feature_agop_layer_neg18_top_vec_mean_gap",
+      "feature_agop_layer_neg18_top_vec_threshold_accuracy",
+      "feature_agop_layer_neg18_topk_ratio",
+      "feature_agop_layer_neg18_trace"
+    ],
+    "R": [
+      "early_capability_delta_negative",
+      "early_capability_delta_positive",
+      "early_capability_slope",
+      "early_neighbor_delta_negative",
+      "early_neighbor_delta_positive",
+      "early_neighbor_slope",
+      "early_target_delta_negative",
+      "early_target_delta_positive",
+      "early_target_slope"
+    ]
+  },
+  "source_dataset_dir": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500_residual_rms_v2/qwen3_5_2b_base/prediction_dataset",
+  "later_alphas": [
+    0.25,
+    0.5
+  ],
+  "source_dataset_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500_residual_rms_v2/qwen3_5_2b_base/prediction_dataset/pml_path_prediction_dataset.csv",
+  "later_label_protocol": "Features in group R use only +/-early_alpha. Labels with the later_ prefix use only strengths in later_alphas, which are validated to be disjoint.",
+  "strict_later_targets": [
+    "later_suppression_path",
+    "later_enhancement_path",
+    "later_neighbor_damage_any_path",
+    "later_capability_damage_any_path",
+    "later_clean_suppression_path",
+    "later_clean_enhancement_path",
+    "later_target_any_path",
+    "later_clean_any_path",
+    "later_no_effect_path"
+  ]
+}
