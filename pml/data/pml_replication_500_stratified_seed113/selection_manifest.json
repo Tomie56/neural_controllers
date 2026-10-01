@@ -1,0 +1,139 @@
+{
+  "data_dir": "/data/neural_controllers/pml/data/pml_fresh_multidomain_3000_v1_frozen",
+  "n_records": 500,
+  "seed": 113,
+  "record_ids_path": "/data/neural_controllers/pml/data/pml_replication_500_stratified_seed113/record_ids.txt",
+  "population_records": 3000,
+  "n_strata": 14,
+  "dataset_counts": {
+    "Rowan/hellaswag": 25,
+    "TIGER-Lab/MMLU-Pro": 172,
+    "allenai/ai2_arc": 58,
+    "allenai/openbookqa": 33,
+    "allenai/qasc": 25,
+    "allenai/sciq": 33,
+    "edinburgh-dawg/mmlu-redux-2.0": 96,
+    "livebench/math": 25,
+    "livebench/reasoning": 33
+  },
+  "domain_counts": {
+    "elementary_science": 33,
+    "recent_corrected_biology": 16,
+    "recent_corrected_chemistry": 16,
+    "recent_corrected_computer_security": 16,
+    "recent_corrected_global_facts": 16,
+    "recent_corrected_machine_learning": 16,
+    "recent_corrected_physics": 16,
+    "recent_multidomain_academic": 172,
+    "recent_objective_math": 25,
+    "recent_objective_reasoning": 33,
+    "science_composition": 25,
+    "science_exam": 58,
+    "science_qa": 33,
+    "situated_commonsense": 25
+  },
+  "freshness_counts": {
+    "classic_pre_2024": 174,
+    "recent_2024_2026": 326
+  },
+  "strata": [
+    {
+      "dataset": "Rowan/hellaswag",
+      "domain": "situated_commonsense",
+      "freshness_group": "classic_pre_2024",
+      "population": 150,
+      "selected": 25
+    },
+    {
+      "dataset": "TIGER-Lab/MMLU-Pro",
+      "domain": "recent_multidomain_academic",
+      "freshness_group": "recent_2024_2026",
+      "population": 1029,
+      "selected": 172
+    },
+    {
+      "dataset": "allenai/ai2_arc",
+      "domain": "science_exam",
+      "freshness_group": "classic_pre_2024",
+      "population": 350,
+      "selected": 58
+    },
+    {
+      "dataset": "allenai/openbookqa",
+      "domain": "elementary_science",
+      "freshness_group": "classic_pre_2024",
+      "population": 200,
+      "selected": 33
+    },
+    {
+      "dataset": "allenai/qasc",
+      "domain": "science_composition",
+      "freshness_group": "classic_pre_2024",
+      "population": 150,
+      "selected": 25
+    },
+    {
+      "dataset": "allenai/sciq",
+      "domain": "science_qa",
+      "freshness_group": "classic_pre_2024",
+      "population": 200,
+      "selected": 33
+    },
+    {
+      "dataset": "edinburgh-dawg/mmlu-redux-2.0",
+      "domain": "recent_corrected_biology",
+      "freshness_group": "recent_2024_2026",
+      "population": 95,
+      "selected": 16
+    },
+    {
+      "dataset": "edinburgh-dawg/mmlu-redux-2.0",
+      "domain": "recent_corrected_chemistry",
+      "freshness_group": "recent_2024_2026",
+      "population": 95,
+      "selected": 16
+    },
+    {
+      "dataset": "edinburgh-dawg/mmlu-redux-2.0",
+      "domain": "recent_corrected_computer_security",
+      "freshness_group": "recent_2024_2026",
+      "population": 98,
+      "selected": 16
+    },
+    {
+      "dataset": "edinburgh-dawg/mmlu-redux-2.0",
+      "domain": "recent_corrected_global_facts",
+      "freshness_group": "recent_2024_2026",
+      "population": 94,
+      "selected": 16
+    },
+    {
+      "dataset": "edinburgh-dawg/mmlu-redux-2.0",
+      "domain": "recent_corrected_machine_learning",
+      "freshness_group": "recent_2024_2026",
+      "population": 95,
+      "selected": 16
+    },
+    {
+      "dataset": "edinburgh-dawg/mmlu-redux-2.0",
+      "domain": "recent_corrected_physics",
+      "freshness_group": "recent_2024_2026",
+      "population": 94,
+      "selected": 16
+    },
+    {
+      "dataset": "livebench/math",
+      "domain": "recent_objective_math",
+      "freshness_group": "recent_2024_2026",
+      "population": 150,
+      "selected": 25
+    },
+    {
+      "dataset": "livebench/reasoning",
+      "domain": "recent_objective_reasoning",
+      "freshness_group": "recent_2024_2026",
+      "population": 200,
+      "selected": 33
+    }
+  ]
+}

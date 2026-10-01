@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3.0pt}
+\caption{Selector utility sensitivity on the same 100 held-out records. Each
+row retrains the utility head after changing one declared weight. Entries are
+paired utility gains for suppression/enhancement.}
+\label{tab:utility-weight-sensitivity}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Configuration & $\Delta U$ vs. fixed & $\Delta U$ vs. zero \\
+\midrule
+Damage weight 0.5 & .030/.015 & .021/.020 \\
+No clean bonus & .056/.041 & .015/.015 \\
+No strength penalty & .050/.032 & .009/.006 \\
+Declared weights & .055/.034 & .013/.008 \\
+Clean bonus 0.2 & .041/.026 & .000/.000 \\
+Strength penalty 0.02 & .056/.037 & .015/.011 \\
+Damage weight 2.0 & .113/.090 & .008/.003 \\
+\bottomrule
+\end{tabular}
+
+\end{table}

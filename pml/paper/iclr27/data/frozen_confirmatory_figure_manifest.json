@@ -1,0 +1,41 @@
+{
+  "direct_label_count": 7,
+  "direct_labels": [
+    {
+      "method": "random",
+      "layer": -21,
+      "label": "Random"
+    },
+    {
+      "method": "random",
+      "layer": -17,
+      "label": "Random (-17)"
+    },
+    {
+      "method": "mean_difference",
+      "layer": -21,
+      "label": "Mean diff."
+    },
+    {
+      "method": "mean_difference",
+      "layer": -17,
+      "label": "Mean diff. (-17)"
+    },
+    {
+      "method": "linear",
+      "layer": -21,
+      "label": "Linear"
+    },
+    {
+      "method": "logistic",
+      "layer": -21,
+      "label": "Logistic"
+    },
+    {
+      "method": "rfm_agop_top1",
+      "layer": -21,
+      "label": "RFM/AGOP"
+    }
+  ],
+  "policy": "All five layer -21 methods plus random and mean-difference at layer -17."
+}

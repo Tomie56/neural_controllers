@@ -1,0 +1,147 @@
+\section{Experiments}
+
+We organize the evidence around three questions: whether learned directions
+create selective intervention paths, which internal signals forecast those
+paths, and whether those forecasts improve strength decisions. We report the
+frozen confirmatory study here; the Supplementary Material adds protocol
+details, uncertainty estimates, and analyses not shown in the main paper.
+
+\subsection{Frozen Multidomain Study}
+
+The benchmark contains 3,000 records from nine public sources: MMLU-Pro,
+MMLU-Redux 2.0, AI2 ARC, OpenBookQA, SciQ, LiveBench reasoning and math,
+HellaSwag, and QASC
+\citep{wang2024mmlupro,gema2024mmluredux,clark2018arc,
+mihaylov-etal-2018-suit,welbl-etal-2017-crowdsourcing,white2025livebench,
+zellers-etal-2019-hellaswag,khot2020qasc}. The collection spans fourteen
+academic, scientific, commonsense, mathematical, and reasoning domains. A
+schema-constrained generation step converts each source item into disjoint
+direction-fitting statements, three record-specific target probes, and three
+semantic-neighbor probes; four globally balanced capability probes are assigned
+per record. The worked example below traces one source item from fitting
+evidence to evaluation probes and its resulting path label. Dataset composition,
+validation, and additional examples appear in the Supplementary Material.
+
+\input{tables/main_worked_record}
+
+We evaluate Qwen3-1.7B-Base \citep{yang2025qwen3} at two middle-depth
+Transformer blocks, reported as blocks 7 and 11 by the model implementation and
+selected using a 500-record layer-selection subset
+(Figure~\ref{fig:layer-selection}). We
+compare five direction constructions over a signed coefficient sweep. Random
+directions calibrate target and collateral thresholds, while the weak response
+at $|\alpha|=0.1$ is disjoint from the stronger coefficients used to define
+confirmatory outcomes. Table~\ref{tab:main-results} defines the reported path
+rates, and prediction folds hold out complete records, datasets, or domains.
+
+For cross-model confirmation, the same frozen 500-record subset is evaluated
+on Qwen3-1.7B, Qwen3.5-2B-Base \citep{qwen2026qwen35}, and
+Ministral-3-3B-Base \citep{liu2026ministral3}. We align relative
+intervention budget $\|\alpha v\|_2/\|h\|_2$ using
+\begin{equation}
+    s_{m,\ell}=\frac{\operatorname{RMS}(h_{m,\ell})}
+    {\operatorname{RMS}(h_{\mathrm{ref},\ell})}
+    \sqrt{\frac{d_m}{d_{\mathrm{ref}}}},
+    \qquad \alpha_{m,\ell}=s_{m,\ell}\alpha_{\mathrm{ref}}.
+    \label{eq:rms-matching}
+\end{equation}
+Scales are fixed on a disjoint 100-record calibration set, after which each
+model recalibrates its random-response thresholds on the formal cohort. The
+confirmation retains random, mean-difference, logistic, and RFM/AGOP directions
+at two pre-specified blocks per model. We omit linear because it is not strongest
+at either primary-study block, which preserves a symmetric comparison across
+architectures.
+
+\input{tables/layer_selection}
+\input{tables/main_results}
+
+\subsection{Learned Directions Improve Selective Paths}
+
+Table~\ref{tab:main-results} reports both the powered 3,000-record outcome
+estimate and the three pre-specified 500-record confirmations. Its entries are
+path-incidence percentages; $\Delta$T and $\Delta$C are percentage-point
+differences from the within-model random control, not AUROC. In the primary
+study, layer-7 RFM/AGOP reaches \textbf{13.1\% Target and 12.3\% Clean}, the
+strongest selective-path result. More broadly, learned directions improve
+target leverage and clean-path incidence over random controls. The strongest
+construction varies by block.
+
+Record-paired bootstrap intervals confirm the learned-over-random Target and
+Clean gains for the strongest primary-study directions. Collateral incidence
+varies by model and layer; full intervals are reported in the Supplementary
+Material.
+
+The residual-norm-matched confirmations preserve the same qualitative pattern
+at model-dependent magnitudes. Figure~\ref{fig:path-outcome-profiles} shows
+that learned directions generally increase target leverage, while collateral
+incidence varies across models and layers. The Qwen3-1.7B subset also closely
+tracks the powered estimate, separating cohort variation from the cross-model
+scale alignment.
+
+\subsection{Low-Dose Responses Forecast Later Outcomes}
+
+Prediction is the central test of PML. Static localization is a weak prior:
+Figure~\ref{fig:cross-model-prediction-heatmap} establishes a consistent
+diagnostic hierarchy. Static localization $L$ adds little beyond base and metadata
+features, while supervised geometry $G$ offers a similarly limited gain. In
+contrast, the strength-disjoint weak response $R$ produces the dominant gain
+across outcomes and models. The Supplementary Material further separates this
+gain from ordinary scalar weak-to-strong correlation. Positive-label prevalence
+is 8--11\%, so the reported tables include AP with AUROC. For Target-any and
+Clean-any, a multivariate $R$-only random forest substantially improves on a
+single signed response, with the complete predictor adding a smaller final
+gain. Final macro AUROC remains around \textbf{0.80--0.85} under record-,
+dataset-, and domain-held-out evaluation. Removing all 500 records used for
+layer selection leaves the four principal full-predictor AUROCs within 0.01 of
+the 3,000-record estimates. The same predictive ordering therefore holds after
+removing the layer-selection records: a structured low-dose causal response is
+more informative about later paths than static localization geometry alone.
+
+\FloatBarrier
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=0.89\textwidth]{figures/path_outcome_profiles.pdf}
+    \caption{Target leverage and collateral incidence on the common 500-record
+    cohort. Each panel shows one base model; colors identify direction
+    construction and marker shapes identify the shallower or deeper
+    pre-specified block. The vertical axis is Target-any path incidence, while
+    the horizontal axis averages semantic-neighbor and capability-damage
+    incidence. Each model has two pre-specified block evaluations, with
+    panel-specific axes that keep within-model trade-offs visible.}
+    \label{fig:path-outcome-profiles}
+\end{figure*}
+
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=\textwidth]{figures/cross_model_prediction_heatmap.pdf}
+    \caption{Cross-model path prediction. Per-outcome record-held-out
+    AUROC on the common 500-record cohort. The first three random-forest columns
+    cumulatively add base margins and record descriptors ($B$), method/block
+    metadata ($M$), and static localization ($L$). The final two columns use the
+    complete $B{+}M{+}L{+}R$ features with a linear predictor or random forest,
+    providing a predictor-class ablation. The weak response produces the
+    dominant feature gain under both predictors, while the nonlinear model gives
+    the strongest final performance.}
+    \label{fig:cross-model-prediction-heatmap}
+\end{figure*}
+
+\subsection{Forecasts Improve Strength Decisions}
+
+We train candidate-strength models from complementary dense and sparse
+trajectories, then evaluate on disjoint dense-grid records. Before a candidate
+outcome is revealed, each policy selects one coefficient or abstains. The
+Supplementary Material gives the full 100-record proof-of-concept table.
+Relative to a train-tuned fixed coefficient, utility improves by \textbf{0.055}
+and \textbf{0.034}, mainly as neighbor damage falls from 6.0\% to 1.8\% and
+5.2\% to 2.2\%. Suppression exceeds no intervention, while enhancement shows
+a positive but uncertain gain. The policy averages 2.55/2.61 coefficient evaluations---two
+weak probes plus a final action---versus 26 for a dense scan; shared direction
+fitting is excluded. Weight sensitivity and full outcomes are supplementary.
+
+\subsection{Endpoint Scope}
+
+Free-generation stress tests are reported in the Supplementary Material. They
+show that margin movement can alter text, while wrong-to-right correction is
+less frequent. PML therefore evaluates teacher-forced,
+margin-level intervention paths.

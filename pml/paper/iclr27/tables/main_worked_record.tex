@@ -1,0 +1,20 @@
+\begin{center}
+\centering
+\small
+\setlength{\tabcolsep}{2.4pt}
+\captionof*{table}{\textbf{Worked example.} One frozen record from construction to path label; direction-fitting statements and evaluation probes are disjoint.}
+\begin{tabular}{@{}p{0.20\columnwidth}p{0.74\columnwidth}@{}}
+\toprule
+Object & Frozen example \\
+\midrule
+Source & MMLU-Redux 2.0 chemistry: Suppose that the 13C nuclei in a molecule in a 600 MHz spectrometer can be 100\% polarized (p = 1). If T1 = 5.0 s, how long does it take for p to reach a value equal to twice the thermal equilibrium polarization at 298 K? \\
+Fit evidence & Positive statement: The polarization reaches twice the thermal equilibrium value in 72.0 seconds. Contrast statement: The polarization reaches twice the thermal equilibrium value in 56.6 seconds. \\
+Target probe & Prompt: After full polarization, how long until it reaches twice thermal equilibrium?; candidate answers: 72.0 s vs. 56.6 s. \\
+Neighbor probe & Prompt: The spin-lattice relaxation time T1 for 13C in this experiment is; candidate answers: 5.0 s vs. 10.0 s. \\
+Capability probe & Prompt: An object in motion tends to stay in motion unless acted upon by an external force. This is; candidate answers: Newton's first law vs. Newton's second law. \\
+Measured path & Mean difference, layer 11: suppression onset $-0.25$; positive neighbor onset $0.5$; no enhancement or capability onset. \\
+Labels & Target=1, N-dmg.=1, C-dmg.=0, Clean suppression=1, Clean=1. \\
+\bottomrule
+\end{tabular}
+
+\end{center}

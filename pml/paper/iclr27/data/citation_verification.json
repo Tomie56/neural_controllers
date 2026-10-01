@@ -1,0 +1,460 @@
+{
+  "audit_date": "2026-09-23",
+  "mode": "citation-audit",
+  "scope": "All 37 existing citations: archived source BibTeX and manuscript normalization.",
+  "automation_limit": "Hashes check local integrity, not online truth or citation-context support.",
+  "source_counts": {
+    "conference_export": 22,
+    "author_inline_export": 2,
+    "conference_inline_export": 3,
+    "arxiv_export": 7,
+    "publisher_crossref_export": 2,
+    "model_card_inline_export": 1
+  },
+  "entries": {
+    "geva-etal-2021-transformer": {
+      "source_urls": [
+        "https://aclanthology.org/2021.emnlp-main.446.bib",
+        "https://aclanthology.org/2021.emnlp-main.446.bib"
+      ],
+      "bibliography_entry_sha256": "7b152b1173739572f39dc992bef4f00f090ea36ca36dde18c39fd8d52df58cee",
+      "source_bibtex_file": "citation_bibtex/geva-etal-2021-transformer.bib",
+      "source_bibtex_sha256": "0428b81c859b9b2c85e9aaf682f00bbd1caf88966b40a23a41c7edcb086303c7",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "dai-etal-2022-knowledge": {
+      "source_urls": [
+        "https://aclanthology.org/2022.acl-long.581.bib",
+        "https://aclanthology.org/2022.acl-long.581.bib"
+      ],
+      "bibliography_entry_sha256": "4ca9e500bd01fbe89dc15fdc4cce361da18b9890a29b2fdb884d02a5d11f73eb",
+      "source_bibtex_file": "citation_bibtex/dai-etal-2022-knowledge.bib",
+      "source_bibtex_sha256": "41057f58b0daf1642c89fb4b10c3cf0373499b79c12d6fcd546f6da08a55a7ad",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "de-cao-etal-2021-editing": {
+      "source_urls": [
+        "https://aclanthology.org/2021.emnlp-main.522.bib",
+        "https://aclanthology.org/2021.emnlp-main.522.bib"
+      ],
+      "bibliography_entry_sha256": "9b663c471fe41f05a2f180fe310b9032976b9e7e1dd5cafbdfed2a30178bf501",
+      "source_bibtex_file": "citation_bibtex/de-cao-etal-2021-editing.bib",
+      "source_bibtex_sha256": "6746414be4c8574af75f19acc64339af08e4ead5c2e4d329fb71871b749563f5",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "NEURIPS2022_6f1d43d5": {
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2022/hash/6f1d43d5a82a37e89b0665b33bf3a182-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2022/file/6f1d43d5a82a37e89b0665b33bf3a182-Bibtex-Conference.bib"
+      ],
+      "bibliography_entry_sha256": "52e1f565b3a2a7dd2df6b65d94aa9ec0fddf9cb2334878d6758cd4be9072162a",
+      "source_bibtex_file": "citation_bibtex/NEURIPS2022_6f1d43d5.bib",
+      "source_bibtex_sha256": "886f78b2ab0cceff3a4fab79b3c96440346bffd48c3351a09feb8917ab439ea2",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "mitchell2022fast": {
+      "source_urls": [
+        "https://raw.githubusercontent.com/eric-mitchell/mend/main/README.md",
+        "https://raw.githubusercontent.com/eric-mitchell/mend/main/README.md"
+      ],
+      "bibliography_entry_sha256": "2b2b473330418973ef2706f2985be367698abcece32c66b3468c000fb5d843d6",
+      "source_bibtex_file": "citation_bibtex/mitchell2022fast.bib",
+      "source_bibtex_sha256": "9c2fa6ad0a8c59486bbbcb77b71c2e5f68815ef4d8f2790b27cafee871b36cd6",
+      "source_kind": "author_inline_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "OpenReview API returned HTTP 403; its guessed /bibtex route returned 404. Google Scholar returned HTTP 429. Downloaded the ICLR BibTeX supplied by the authors in their official MEND repository. Conference corroboration: https://iclr.cc/virtual/2022/poster/6846 . This is an author export, not a conference/Scholar download."
+    },
+    "mitchell22a": {
+      "source_urls": [
+        "https://proceedings.mlr.press/v162/mitchell22a.html",
+        "https://proceedings.mlr.press/v162/mitchell22a.html"
+      ],
+      "bibliography_entry_sha256": "e9f34c09eedaa3a41c7758d8d6606e09084402a35e7ab31e05235969370c06aa",
+      "source_bibtex_file": "citation_bibtex/mitchell22a.bib",
+      "source_bibtex_sha256": "c0671eb691f57d49cf5ef4787dd4c51b3af4c201e522d41719f001a2ca2d1b35",
+      "source_kind": "conference_inline_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "meng2023mass": {
+      "source_urls": [
+        "https://memit.baulab.info/",
+        "https://memit.baulab.info/"
+      ],
+      "bibliography_entry_sha256": "022dcf3d5b961896d7dacfbcca8be48dff4988786b6013c6a270e63be908103d",
+      "source_bibtex_file": "citation_bibtex/meng2023mass.bib",
+      "source_bibtex_sha256": "6ba9bb1c8e587f4bcd32ced67a9f1c098eef291f7ad85b14b71dff4a40e53fba",
+      "source_kind": "author_inline_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "OpenReview API returned HTTP 403; its guessed /bibtex route returned 404. Downloaded the authors' own BibTeX from the MEMIT project. Conference corroboration: https://iclr.cc/virtual/2023/poster/11880 . This is an author export, not a conference/Scholar download."
+    },
+    "NEURIPS2023_3927bbdc": {
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2023/hash/3927bbdcf0e8d1fa8aa23c26f358a281-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2023/file/3927bbdcf0e8d1fa8aa23c26f358a281-Bibtex-Conference.bib"
+      ],
+      "bibliography_entry_sha256": "384615dd14866123196d53fd6938e7044955d6efaf723f486c05f1fcd88b0c2a",
+      "source_bibtex_file": "citation_bibtex/NEURIPS2023_3927bbdc.bib",
+      "source_bibtex_sha256": "4f990840bfbfe0a73d1079970e1c3ae690f28259075cfa5ff432d2b298858403",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "lee-etal-2025-localization": {
+      "source_urls": [
+        "https://aclanthology.org/2025.emnlp-main.1109.bib",
+        "https://aclanthology.org/2025.emnlp-main.1109.bib"
+      ],
+      "bibliography_entry_sha256": "dcd6aa279acdce3dadbbfba36b5c2580fabe683a30836d620f9dd27b8310dcb1",
+      "source_bibtex_file": "citation_bibtex/lee-etal-2025-localization.bib",
+      "source_bibtex_sha256": "3599972a2f13870422c0fa8733750b9d3cc508b02a22342754ad0675942a1a43",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "turner2023steering": {
+      "source_urls": [
+        "https://arxiv.org/bibtex/2308.10248",
+        "https://arxiv.org/bibtex/2308.10248"
+      ],
+      "bibliography_entry_sha256": "13db16174e95d5ef73de3396c340c4e916fa12f5197e89d4fc033ca46d71b85f",
+      "source_bibtex_file": "citation_bibtex/turner2023steering.bib",
+      "source_bibtex_sha256": "992f71263484551f2ea5ebb6b2cb31eab25d2da23919251788c3ef3a31954c40",
+      "source_kind": "arxiv_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "rimsky-etal-2024-steering": {
+      "source_urls": [
+        "https://aclanthology.org/2024.acl-long.828.bib",
+        "https://aclanthology.org/2024.acl-long.828.bib"
+      ],
+      "bibliography_entry_sha256": "0d38d4b6726d38074d54e92a046cccddbb186dd0b77f7a4ba23fd253c906f60e",
+      "source_bibtex_file": "citation_bibtex/rimsky-etal-2024-steering.bib",
+      "source_bibtex_sha256": "53afca56aa9c9c221b535654f14ddf733f94b73444c4aafca8ebe338a33b3a87",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "NEURIPS2023_81b83900": {
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2023/hash/81b8390039b7302c909cb769f8b6cd93-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2023/file/81b8390039b7302c909cb769f8b6cd93-Bibtex-Conference.bib"
+      ],
+      "bibliography_entry_sha256": "4ca18a189ec57adf9f94a749a6b1405ec92ce32eb5f39ed0f0c3c8f0fc267e52",
+      "source_bibtex_file": "citation_bibtex/NEURIPS2023_81b83900.bib",
+      "source_bibtex_sha256": "d2acccb0f2e14b77404ec8ebd6a88466b6214bfb9e188f56f58a40fda910602a",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "stoehr-etal-2024-activation": {
+      "source_urls": [
+        "https://aclanthology.org/2024.findings-emnlp.479.bib",
+        "https://aclanthology.org/2024.findings-emnlp.479.bib"
+      ],
+      "bibliography_entry_sha256": "7d964fdf90c855ad942c712e9a7476788a77b301dde92018ef20a3f82a05a51f",
+      "source_bibtex_file": "citation_bibtex/stoehr-etal-2024-activation.bib",
+      "source_bibtex_sha256": "df07e37855a2a32a68e4b641f5e5832d4e5800186c7b1454438054d062574d83",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "zou2023representation": {
+      "source_urls": [
+        "https://arxiv.org/bibtex/2310.01405",
+        "https://arxiv.org/bibtex/2310.01405"
+      ],
+      "bibliography_entry_sha256": "ea17f283f9e2bf4a403ebd2e0ef82967501d58debb1dd546b387f871fc26d566",
+      "source_bibtex_file": "citation_bibtex/zou2023representation.bib",
+      "source_bibtex_sha256": "81522ed431856aa0ab36a3919d7d241f8999e0cf7ce3fa574b29c080814528a2",
+      "source_kind": "arxiv_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "radhakrishnan2022mechanism": {
+      "source_urls": [
+        "https://api.crossref.org/works/10.1126/science.adi5639/transform/application/x-bibtex",
+        "https://api.crossref.org/works/10.1126/science.adi5639/transform/application/x-bibtex"
+      ],
+      "bibliography_entry_sha256": "3a9c3ad1a7b70736ac307ad9a333f057e108747fe8e29ff896587fb5251a7d91",
+      "source_bibtex_file": "citation_bibtex/radhakrishnan2022mechanism.bib",
+      "source_bibtex_sha256": "f5d9c23f85ac895aeae6834c16dc4ac3d1139b92d37c49aa26f75441252fc8e0",
+      "source_kind": "publisher_crossref_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Use the final Science 2024 article and its publisher-deposited Crossref BibTeX. The former arXiv 2022 entry referred to an earlier title/version. Citation key is retained for compatibility."
+    },
+    "wu25a": {
+      "source_urls": [
+        "https://proceedings.mlr.press/v267/wu25a.html",
+        "https://proceedings.mlr.press/v267/wu25a.html"
+      ],
+      "bibliography_entry_sha256": "1aa18f6b19774669f1157fae510bbc79cc92e2195ea5fff58c9265fefd8e6da1",
+      "source_bibtex_file": "citation_bibtex/wu25a.bib",
+      "source_bibtex_sha256": "cf15df4a8adcf5cefeda0984e137a026dc337330f06439c9cc9b8332a6c731d0",
+      "source_kind": "conference_inline_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "silva-etal-2025-steering": {
+      "source_urls": [
+        "https://aclanthology.org/2025.acl-long.974.bib",
+        "https://aclanthology.org/2025.acl-long.974.bib"
+      ],
+      "bibliography_entry_sha256": "32d6ba49a310af94572ac2d2ba550e95cccbcbf5db53b4434800f0010a6c7965",
+      "source_bibtex_file": "citation_bibtex/silva-etal-2025-steering.bib",
+      "source_bibtex_sha256": "3281eae12caa86c028b96c3bf006110ec3bae866a8c260bb20a1edca7cf83504",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "goyal-iii-2026-steering": {
+      "source_urls": [
+        "https://aclanthology.org/2026.eacl-long.268.bib",
+        "https://aclanthology.org/2026.eacl-long.268.bib"
+      ],
+      "bibliography_entry_sha256": "50972eb2103d6b97d92f7d064eee6ee338a2f4524291b6d5b45fd2e12b78c418",
+      "source_bibtex_file": "citation_bibtex/goyal-iii-2026-steering.bib",
+      "source_bibtex_sha256": "f5d141e7faaa15fac4178d3e68da30acecaf4b62c1e5abfb26842fc9fe83762b",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "pmlr-v235-singh24d": {
+      "source_urls": [
+        "https://proceedings.mlr.press/v235/singh24d.html",
+        "https://proceedings.mlr.press/v235/singh24d.html"
+      ],
+      "bibliography_entry_sha256": "469055f219c0008eba093500aecda3696a1a1b3257d103ca7643505c179b6f7d",
+      "source_bibtex_file": "citation_bibtex/pmlr-v235-singh24d.bib",
+      "source_bibtex_sha256": "61870e6126e8c6dbbd7aeb018fd86818cbee407781cde591169469d071ed5a96",
+      "source_kind": "conference_inline_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "tan2024steering": {
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/fb3ad59a84799bfb8d700e56d19c231b-Abstract-Conference.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/file/fb3ad59a84799bfb8d700e56d19c231b-Bibtex-Conference.bib"
+      ],
+      "bibliography_entry_sha256": "c43cf3f07ea2e2be18b1e2e9492a473b4dfec4719fbdaa183ad11230b7f7464f",
+      "source_bibtex_file": "citation_bibtex/tan2024steering.bib",
+      "source_bibtex_sha256": "67c8427e41c2e566898b6765da243baf6e7102abc00ca2b82c0047b250e7bc56",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "pres2024reliable": {
+      "source_urls": [
+        "https://arxiv.org/bibtex/2410.17245",
+        "https://arxiv.org/bibtex/2410.17245"
+      ],
+      "bibliography_entry_sha256": "7aef927d5bda0dfedae3c1ce82e0096b4e5d2f6ab4dffce91b01df73ac01e44b",
+      "source_bibtex_file": "citation_bibtex/pres2024reliable.bib",
+      "source_bibtex_sha256": "e1979573b92aa662992d7d23407a3d043fa491d346ec191b19c90ebf2df78006",
+      "source_kind": "arxiv_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "xu-etal-2026-controllable": {
+      "source_urls": [
+        "https://aclanthology.org/2026.acl-long.1443.bib",
+        "https://aclanthology.org/2026.acl-long.1443.bib"
+      ],
+      "bibliography_entry_sha256": "fd3b2687a65564dc120e324ee45484c0b7e98154c2f2e782535012158772f64a",
+      "source_bibtex_file": "citation_bibtex/xu-etal-2026-controllable.bib",
+      "source_bibtex_sha256": "e2991fb8aa306e22a398216b3b8063ef5b4d6efb48df62e47bbaa78b15d40d41",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "xu-etal-2026-steering": {
+      "source_urls": [
+        "https://aclanthology.org/2026.acl-long.1463.bib",
+        "https://aclanthology.org/2026.acl-long.1463.bib"
+      ],
+      "bibliography_entry_sha256": "85bbc0628879befc393f7857ab65849a5e470c9cdac463e7ee02402013a01f69",
+      "source_bibtex_file": "citation_bibtex/xu-etal-2026-steering.bib",
+      "source_bibtex_sha256": "dfc3b54cccaf5dd3fcc5510d9a68dbd18970d727e4ff01ce0fdd15c45950e020",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "fan2026steerable": {
+      "source_urls": [
+        "https://arxiv.org/bibtex/2606.11599",
+        "https://arxiv.org/bibtex/2606.11599"
+      ],
+      "bibliography_entry_sha256": "b2f72011da515d68c0084912d6610743226e14fec25e483d5128b811f82c7851",
+      "source_bibtex_file": "citation_bibtex/fan2026steerable.bib",
+      "source_bibtex_sha256": "e771317f10a21dfaf5a1d9b03eb16b1058be6dcfe1eac7dc72e8e4c83d92e1e4",
+      "source_kind": "arxiv_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "yao-etal-2023-editing": {
+      "source_urls": [
+        "https://aclanthology.org/2023.emnlp-main.632.bib",
+        "https://aclanthology.org/2023.emnlp-main.632.bib"
+      ],
+      "bibliography_entry_sha256": "8b8d73eaa787921e964cfaa61e7909d8d896eaae8c26194ba66537a51a2a57b4",
+      "source_bibtex_file": "citation_bibtex/yao-etal-2023-editing.bib",
+      "source_bibtex_sha256": "d572421b50db81b82f581d5f0820be335f116102ba3a68ee972fbb49c7b21f15",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "wang-etal-2024-easyedit": {
+      "source_urls": [
+        "https://aclanthology.org/2024.acl-demos.9.bib",
+        "https://aclanthology.org/2024.acl-demos.9.bib"
+      ],
+      "bibliography_entry_sha256": "3d1ba821310437c50971da8dd99d9087ed5a4a165581d638e87442ccf00a3efc",
+      "source_bibtex_file": "citation_bibtex/wang-etal-2024-easyedit.bib",
+      "source_bibtex_sha256": "88df16558c81fb604753a63ba0dc38d6441456126005f1b84a3936244dd4bfba",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "wang2024mmlupro": {
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ad236edc564f3e3156e1b2feafb99a24-Abstract.html",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/file/ad236edc564f3e3156e1b2feafb99a24-Bibtex-Datasets_and_Benchmarks_Track.bib"
+      ],
+      "bibliography_entry_sha256": "3265bb3891d3eaaef1214421a9ddcc6bbb1b020f18a627478e0516a6f1943908",
+      "source_bibtex_file": "citation_bibtex/wang2024mmlupro.bib",
+      "source_bibtex_sha256": "505e99b4ac894fb9377659730ebdc0fd3b98c9a5e71c944b2daede8815bdd39f",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "gema2024mmluredux": {
+      "source_urls": [
+        "https://aclanthology.org/2025.naacl-long.262.bib",
+        "https://aclanthology.org/2025.naacl-long.262.bib"
+      ],
+      "bibliography_entry_sha256": "67cabec641919ba90622542c57703960a3918d10b7b45a8ed2ea0359fa61146b",
+      "source_bibtex_file": "citation_bibtex/gema2024mmluredux.bib",
+      "source_bibtex_sha256": "5ac3a72b50d11dffa4c325df177726378ca6151a87fabb791aa6f5759e5a352e",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "clark2018arc": {
+      "source_urls": [
+        "https://arxiv.org/bibtex/1803.05457",
+        "https://arxiv.org/bibtex/1803.05457"
+      ],
+      "bibliography_entry_sha256": "6f06f466edb6bef854f5bf1a783c0967314b812acbde85ee0ef3ed907c6bb7b7",
+      "source_bibtex_file": "citation_bibtex/clark2018arc.bib",
+      "source_bibtex_sha256": "4effb4cfd6880b565924fe8d341ce95f4dc0aea2683d05e2c03e711679ea503f",
+      "source_kind": "arxiv_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "mihaylov-etal-2018-suit": {
+      "source_urls": [
+        "https://aclanthology.org/D18-1260.bib",
+        "https://aclanthology.org/D18-1260.bib"
+      ],
+      "bibliography_entry_sha256": "1ea0f5651f4b93e28811193bd29c399e06dc86833c6b21be559168c6d007bd02",
+      "source_bibtex_file": "citation_bibtex/mihaylov-etal-2018-suit.bib",
+      "source_bibtex_sha256": "8ed41b3c6ea2886da0b977a71a1ddae99956ac9529f36a8619dc230f07f6ac14",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "welbl-etal-2017-crowdsourcing": {
+      "source_urls": [
+        "https://aclanthology.org/W17-4413.bib",
+        "https://aclanthology.org/W17-4413.bib"
+      ],
+      "bibliography_entry_sha256": "b28cf818d72338964d770855091182e42ff4e5ef5c2a9394d38b1ef8d65156bf",
+      "source_bibtex_file": "citation_bibtex/welbl-etal-2017-crowdsourcing.bib",
+      "source_bibtex_sha256": "951ebbfc2a0a01224475f5e6bdc1c2786f9bd9ee8ea6eacfe7b75a9bfd729ccc",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "white2025livebench": {
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2025/hash/e4a46394ba5378b3f9a186a5b4c650d1-Abstract-Conference.html",
+        "https://proceedings.iclr.cc/paper_files/paper/2025/file/e4a46394ba5378b3f9a186a5b4c650d1-Bibtex-Conference.bib"
+      ],
+      "bibliography_entry_sha256": "9c460830f59ec69f445817870204a43e84e0afcb903c05f79710ac7a3c9d8d42",
+      "source_bibtex_file": "citation_bibtex/white2025livebench.bib",
+      "source_bibtex_sha256": "adaaf02c2bcdb0ed4163b00339e7843519f5540f4929ed6f9ca6c96c30fbceb4",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "The official ICLR BibTeX contains all 18 authors, including Shubh-Agrawal; it uses Sandeep Sandha, whereas the paper PDF spells out Sandeep Singh Sandha. Follow the exported name in the manuscript and retain this discrepancy explicitly."
+    },
+    "zellers-etal-2019-hellaswag": {
+      "source_urls": [
+        "https://aclanthology.org/P19-1472.bib",
+        "https://aclanthology.org/P19-1472.bib"
+      ],
+      "bibliography_entry_sha256": "605fa8674e3632dd6e1817162a01f6552550fc2b3af602a10967855d84d53958",
+      "source_bibtex_file": "citation_bibtex/zellers-etal-2019-hellaswag.bib",
+      "source_bibtex_sha256": "748d3327a10099d9ae9b2bd2521567b235226ecd5f6c2d4d4354a07039f7f0ce",
+      "source_kind": "conference_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "khot2020qasc": {
+      "source_urls": [
+        "https://api.crossref.org/works/10.1609/aaai.v34i05.6319/transform/application/x-bibtex",
+        "https://api.crossref.org/works/10.1609/aaai.v34i05.6319/transform/application/x-bibtex"
+      ],
+      "bibliography_entry_sha256": "ba07d079231ab84a081f04d5fda367e441cf18a0f4680f6f9547c4e0a00d122b",
+      "source_bibtex_file": "citation_bibtex/khot2020qasc.bib",
+      "source_bibtex_sha256": "0b27d1b140360e1a6a1bac8c1649dbadb44818619598c9ef24bf83a6bf4d1fcf",
+      "source_kind": "publisher_crossref_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "AAAI OJS download was inaccessible through the shell proxy. Downloaded publisher-deposited DOI metadata as BibTeX via Crossref. Conference record: https://ojs.aaai.org/index.php/AAAI/article/view/6319 . This is a Crossref export, not an OJS download."
+    },
+    "yang2025qwen3": {
+      "source_urls": [
+        "https://arxiv.org/bibtex/2505.09388",
+        "https://arxiv.org/bibtex/2505.09388"
+      ],
+      "bibliography_entry_sha256": "5741b86b60b9084baab41a81b5bc72aaf59d40ac84fc6b05c67e483a491443f8",
+      "source_bibtex_file": "citation_bibtex/yang2025qwen3.bib",
+      "source_bibtex_sha256": "2fba437d35a4bd71cc9d1aad1e10cbfb8376c813c41e525104ba0534ceee391b",
+      "source_kind": "arxiv_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    },
+    "qwen2026qwen35": {
+      "source_urls": [
+        "https://huggingface.co/Qwen/Qwen3.5-2B-Base/raw/main/README.md",
+        "https://huggingface.co/Qwen/Qwen3.5-2B-Base/raw/main/README.md"
+      ],
+      "bibliography_entry_sha256": "c86242880e180cff585c7f530b355444bab91857c8b1a5f8ceb877177b71942d",
+      "source_bibtex_file": "citation_bibtex/qwen2026qwen35.bib",
+      "source_bibtex_sha256": "2ae0d82d0230b78678f8ed601b42f8517b212c1edce77dda5e0c37e726afa765",
+      "source_kind": "model_card_inline_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "This is a model release, not a conference paper. Downloaded the exact citation supplied in the official Qwen3.5-2B-Base model card; it cites the Qwen3.5 release blog."
+    },
+    "liu2026ministral3": {
+      "source_urls": [
+        "https://arxiv.org/bibtex/2601.08584",
+        "https://arxiv.org/bibtex/2601.08584"
+      ],
+      "bibliography_entry_sha256": "e0eabfa941d66579218ea3872d8aec3613ef0f125b123fc83bc78758dba3cf39",
+      "source_bibtex_file": "citation_bibtex/liu2026ministral3.bib",
+      "source_bibtex_sha256": "8671ba781abe343d3705f0dcd9dd78bba79b6821598e6fcbafe611940fe241a0",
+      "source_kind": "arxiv_export",
+      "action": "Rebuilt from archived original BibTeX with documented normalization.",
+      "verification_note": "Source export title, author list, year and identifiers checked against the intended cited work."
+    }
+  }
+}

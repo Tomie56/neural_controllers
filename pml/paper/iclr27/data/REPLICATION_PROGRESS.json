@@ -1,0 +1,245 @@
+{
+  "snapshot_epoch": 1784443259.5713508,
+  "snapshot_time": "2026-07-19T14:40:59+08:00",
+  "result_root": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500",
+  "models": [
+    {
+      "model_key": "qwen3_5_2b_base",
+      "model_label": "Qwen3.5-2B",
+      "root": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/qwen3_5_2b_base",
+      "records": 500,
+      "methods": [
+        "random",
+        "mean_difference",
+        "logistic",
+        "rfm_agop_top1"
+      ],
+      "layers": [
+        -18,
+        -15
+      ],
+      "completed_record_method_layer_units": 3565,
+      "total_record_method_layer_units": 4000,
+      "progress_fraction": 0.89125,
+      "complete_configs": 7,
+      "total_configs": 8,
+      "active_configs": [
+        {
+          "method": "rfm_agop_top1",
+          "layer": -15,
+          "completed_records": 65,
+          "expected_records": 500,
+          "status": "running",
+          "failures": 0,
+          "seconds_per_record_naive": 85.0950678898738,
+          "eta_seconds_naive": 37016.3545320951,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/qwen3_5_2b_base/outcomes/rfm_agop_top1/layer_neg15/raw_scores.jsonl"
+        }
+      ],
+      "strict_summary_complete": false,
+      "configs": [
+        {
+          "method": "random",
+          "layer": -18,
+          "completed_records": 500,
+          "expected_records": 500,
+          "status": "complete",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/qwen3_5_2b_base/outcomes/random/layer_neg18/raw_scores.jsonl"
+        },
+        {
+          "method": "random",
+          "layer": -15,
+          "completed_records": 500,
+          "expected_records": 500,
+          "status": "complete",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/qwen3_5_2b_base/outcomes/random/layer_neg15/raw_scores.jsonl"
+        },
+        {
+          "method": "mean_difference",
+          "layer": -18,
+          "completed_records": 500,
+          "expected_records": 500,
+          "status": "complete",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/qwen3_5_2b_base/outcomes/mean_difference/layer_neg18/raw_scores.jsonl"
+        },
+        {
+          "method": "mean_difference",
+          "layer": -15,
+          "completed_records": 500,
+          "expected_records": 500,
+          "status": "complete",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/qwen3_5_2b_base/outcomes/mean_difference/layer_neg15/raw_scores.jsonl"
+        },
+        {
+          "method": "logistic",
+          "layer": -18,
+          "completed_records": 500,
+          "expected_records": 500,
+          "status": "complete",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/qwen3_5_2b_base/outcomes/logistic/layer_neg18/raw_scores.jsonl"
+        },
+        {
+          "method": "logistic",
+          "layer": -15,
+          "completed_records": 500,
+          "expected_records": 500,
+          "status": "complete",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/qwen3_5_2b_base/outcomes/logistic/layer_neg15/raw_scores.jsonl"
+        },
+        {
+          "method": "rfm_agop_top1",
+          "layer": -18,
+          "completed_records": 500,
+          "expected_records": 500,
+          "status": "complete",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/qwen3_5_2b_base/outcomes/rfm_agop_top1/layer_neg18/raw_scores.jsonl"
+        },
+        {
+          "method": "rfm_agop_top1",
+          "layer": -15,
+          "completed_records": 65,
+          "expected_records": 500,
+          "status": "running",
+          "failures": 0,
+          "seconds_per_record_naive": 85.0950678898738,
+          "eta_seconds_naive": 37016.3545320951,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/qwen3_5_2b_base/outcomes/rfm_agop_top1/layer_neg15/raw_scores.jsonl"
+        }
+      ]
+    },
+    {
+      "model_key": "ministral_3_3b_base_2512",
+      "model_label": "Ministral-3-3B",
+      "root": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/ministral_3_3b_base_2512",
+      "records": 500,
+      "methods": [
+        "random",
+        "mean_difference",
+        "logistic",
+        "rfm_agop_top1"
+      ],
+      "layers": [
+        -20,
+        -16
+      ],
+      "completed_record_method_layer_units": 0,
+      "total_record_method_layer_units": 4000,
+      "progress_fraction": 0.0,
+      "complete_configs": 0,
+      "total_configs": 8,
+      "active_configs": [],
+      "strict_summary_complete": false,
+      "configs": [
+        {
+          "method": "random",
+          "layer": -20,
+          "completed_records": 0,
+          "expected_records": 500,
+          "status": "pending",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/ministral_3_3b_base_2512/outcomes/random/layer_neg20/raw_scores.jsonl"
+        },
+        {
+          "method": "random",
+          "layer": -16,
+          "completed_records": 0,
+          "expected_records": 500,
+          "status": "pending",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/ministral_3_3b_base_2512/outcomes/random/layer_neg16/raw_scores.jsonl"
+        },
+        {
+          "method": "mean_difference",
+          "layer": -20,
+          "completed_records": 0,
+          "expected_records": 500,
+          "status": "pending",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/ministral_3_3b_base_2512/outcomes/mean_difference/layer_neg20/raw_scores.jsonl"
+        },
+        {
+          "method": "mean_difference",
+          "layer": -16,
+          "completed_records": 0,
+          "expected_records": 500,
+          "status": "pending",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/ministral_3_3b_base_2512/outcomes/mean_difference/layer_neg16/raw_scores.jsonl"
+        },
+        {
+          "method": "logistic",
+          "layer": -20,
+          "completed_records": 0,
+          "expected_records": 500,
+          "status": "pending",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/ministral_3_3b_base_2512/outcomes/logistic/layer_neg20/raw_scores.jsonl"
+        },
+        {
+          "method": "logistic",
+          "layer": -16,
+          "completed_records": 0,
+          "expected_records": 500,
+          "status": "pending",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/ministral_3_3b_base_2512/outcomes/logistic/layer_neg16/raw_scores.jsonl"
+        },
+        {
+          "method": "rfm_agop_top1",
+          "layer": -20,
+          "completed_records": 0,
+          "expected_records": 500,
+          "status": "pending",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/ministral_3_3b_base_2512/outcomes/rfm_agop_top1/layer_neg20/raw_scores.jsonl"
+        },
+        {
+          "method": "rfm_agop_top1",
+          "layer": -16,
+          "completed_records": 0,
+          "expected_records": 500,
+          "status": "pending",
+          "failures": 0,
+          "seconds_per_record_naive": null,
+          "eta_seconds_naive": null,
+          "raw_path": "/data/neural_controllers/pml/results/fresh_multidomain_3000/stage_activation_pml/replication_500/ministral_3_3b_base_2512/outcomes/rfm_agop_top1/layer_neg16/raw_scores.jsonl"
+        }
+      ]
+    }
+  ]
+}

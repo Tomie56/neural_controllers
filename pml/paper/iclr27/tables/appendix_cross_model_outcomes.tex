@@ -1,0 +1,43 @@
+\begin{table*}[t]
+\centering
+
+\scriptsize
+\setlength{\tabcolsep}{2.0pt}
+\caption{Complete residual-norm-matched 500-record outcomes. Rates are percentages. $\Delta$Target and $\Delta$Clean compare each learned direction with random at the same model and layer.}
+\label{tab:cross-model-outcomes-full}
+\begin{tabular}{llrrrrrrrrrr}
+\toprule
+Model/layer & Direction & Supp. & Enh. & Target & N-dmg. & C-dmg. & Cl. supp. & Cl. enh. & Clean & $\Delta$Target & $\Delta$Clean \\
+\midrule
+Qwen3-1.7B-Base, 7 & Random & 4.4 & 4.8 & 9.0 & 7.4 & 9.2 & 4.0 & 4.0 & 7.8 & -- & -- \\
+ & Mean diff. & 5.2 & 7.4 & 12.6 & 8.2 & 10.2 & 4.4 & 7.2 & 11.6 & +3.6 & +3.8 \\
+ & Logistic & 6.8 & 6.2 & 12.8 & 8.0 & 8.6 & 6.6 & 5.6 & 12.0 & +3.8 & +4.2 \\
+ & RFM/AGOP & 6.2 & 7.8 & 13.2 & 9.4 & 9.6 & 5.6 & 7.2 & 12.4 & +4.2 & +4.6 \\
+\addlinespace[0.8pt]
+Qwen3-1.7B-Base, 11 & Random & 4.8 & 4.8 & 9.6 & 7.6 & 9.0 & 4.8 & 4.4 & 9.2 & -- & -- \\
+ & Mean diff. & 6.0 & 4.6 & 10.0 & 7.6 & 8.0 & 5.0 & 4.2 & 8.6 & +0.4 & -0.6 \\
+ & Logistic & 5.8 & 6.4 & 12.2 & 7.8 & 7.4 & 5.6 & 5.8 & 11.4 & +2.6 & +2.2 \\
+ & RFM/AGOP & 4.2 & 5.8 & 9.8 & 8.2 & 7.4 & 3.8 & 5.2 & 8.8 & +0.2 & -0.4 \\
+\midrule
+Qwen3.5-2B-Base, 6 & Random & 4.6 & 4.0 & 8.6 & 7.6 & 8.2 & 3.6 & 3.6 & 7.2 & -- & -- \\
+ & Mean diff. & 16.6 & 17.2 & 30.2 & 9.6 & 8.8 & 14.6 & 16.0 & 28.2 & +21.6 & +21.0 \\
+ & Logistic & 18.8 & 16.0 & 28.4 & 11.2 & 5.6 & 17.0 & 15.2 & 26.8 & +19.8 & +19.6 \\
+ & RFM/AGOP & 18.8 & 17.6 & 32.0 & 10.6 & 9.0 & 17.8 & 17.4 & 31.2 & +23.4 & +24.0 \\
+\addlinespace[0.8pt]
+Qwen3.5-2B-Base, 9 & Random & 4.6 & 4.8 & 9.4 & 6.8 & 5.4 & 4.2 & 4.4 & 8.6 & -- & -- \\
+ & Mean diff. & 9.2 & 7.2 & 15.6 & 9.6 & 5.2 & 8.8 & 6.8 & 15.0 & +6.2 & +6.4 \\
+ & Logistic & 7.8 & 8.8 & 16.2 & 8.6 & 6.0 & 7.0 & 8.0 & 14.6 & +6.8 & +6.0 \\
+ & RFM/AGOP & 8.0 & 7.4 & 15.0 & 9.0 & 5.8 & 7.4 & 6.6 & 13.8 & +5.6 & +5.2 \\
+\midrule
+Ministral-3-3B-Base, 6 & Random & 6.2 & 5.0 & 10.6 & 7.8 & 9.4 & 5.6 & 4.6 & 9.8 & -- & -- \\
+ & Mean diff. & 11.2 & 11.2 & 21.2 & 10.6 & 9.8 & 10.4 & 10.6 & 19.8 & +10.6 & +10.0 \\
+ & Logistic & 10.0 & 12.2 & 21.4 & 11.2 & 8.8 & 9.8 & 11.6 & 20.6 & +10.8 & +10.8 \\
+ & RFM/AGOP & 11.0 & 9.8 & 19.4 & 11.2 & 11.4 & 10.4 & 9.2 & 18.2 & +8.8 & +8.4 \\
+\addlinespace[0.8pt]
+Ministral-3-3B-Base, 10 & Random & 3.6 & 4.6 & 7.8 & 7.2 & 8.8 & 3.2 & 4.6 & 7.4 & -- & -- \\
+ & Mean diff. & 9.0 & 8.0 & 16.4 & 8.4 & 6.4 & 8.8 & 7.4 & 15.6 & +8.6 & +8.2 \\
+ & Logistic & 9.6 & 8.6 & 17.8 & 8.8 & 9.2 & 9.0 & 8.2 & 16.8 & +10.0 & +9.4 \\
+ & RFM/AGOP & 8.6 & 8.2 & 16.0 & 7.6 & 8.0 & 8.0 & 7.4 & 14.8 & +8.2 & +7.4 \\
+\bottomrule
+\end{tabular}
+\end{table*}

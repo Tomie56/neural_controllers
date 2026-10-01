@@ -1,0 +1,52 @@
+\section{Related Work}
+
+\paragraph{Knowledge representation, localization, and editing.}
+Transformer internals have been associated with feed-forward memories,
+knowledge neurons, and causally important states
+\citep{geva-etal-2021-transformer,dai-etal-2022-knowledge,
+NEURIPS2022_6f1d43d5}. Editing uses learned editors, external memory, or
+targeted parameter updates
+\citep{de-cao-etal-2021-editing,mitchell2022fast,mitchell22a,meng2023mass}, with
+efficacy, generalization, and locality organized by surveys and toolkits
+\citep{yao-etal-2023-editing,wang-etal-2024-easyedit}.
+Localization need not identify components that support editing or unlearning
+\citep{NEURIPS2023_3927bbdc,lee-etal-2025-localization}; PML tests its predictive
+connection to intervention outcomes.
+
+\paragraph{Activation steering and control tradeoffs.}
+Activation engineering intervenes on intermediate representations
+\citep{turner2023steering}; contrastive activation addition, representation
+engineering, and affine representation surgery construct or analyze
+activation interventions from examples and population structure
+\citep{rimsky-etal-2024-steering,zou2023representation,pmlr-v235-singh24d}.
+Other work studies truthfulness components, coefficient scaling, and
+preference--utility tradeoffs
+\citep{NEURIPS2023_81b83900,stoehr-etal-2024-activation,
+xu-etal-2026-steering}. AxBench compares concept detection and steering methods
+\citep{wu25a}, while broader evaluations expose sensitivity to instruction
+phrasing, prompt distribution, layer choice, and model scale
+\citep{tan2024steering,silva-etal-2025-steering,
+goyal-iii-2026-steering}. These studies motivate joint leverage and side-effect
+measurement; PML additionally asks whether localization evidence forecasts
+their coexistence for each record--direction--layer path.
+
+\paragraph{Evaluation and prediction of steerability.}
+Steering evaluations call for task-matched contexts, likelihood-aware metrics,
+and baselines \citep{pres2024reliable}, and test control across behavioral
+granularities \citep{xu-etal-2026-controllable}. Most closely related,
+\citet{fan2026steerable} predict under-, successful, or over-steering from
+early decoding dynamics and rank strengths to reduce rollouts. PML instead predicts
+a record--direction--layer path on a pre-specified coefficient grid, calibrates
+target, semantic-neighbor, and capability events against random directions, and
+optimizes collateral-aware margin utility. Its weak feature is measured at a
+coefficient excluded from the stronger-coefficient labels, after which a policy
+chooses one coefficient or abstains. SteerBoost targets efficient generation-
+level concept alignment; PML tests whether localization and a fixed low-dose
+diagnostic forecast selective margin outcomes.
+
+\paragraph{Supervised geometry as a diagnostic.}
+Recursive feature machines use the average gradient outer product to learn
+task-adapted geometry \citep{radhakrishnan2022mechanism}. PML uses its leading
+direction, spectral concentration, and alignment as candidate signals, while
+explicitly testing rather than assuming that supervised sensitivity implies
+selective control.

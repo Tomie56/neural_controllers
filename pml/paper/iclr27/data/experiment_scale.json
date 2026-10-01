@@ -1,0 +1,54 @@
+{
+  "unique_records": 3000,
+  "datasets": 9,
+  "domains": 14,
+  "methods": 6,
+  "layers": [
+    -21,
+    -17
+  ],
+  "strengths": [
+    -0.5,
+    -0.25,
+    -0.1,
+    0.0,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "method_layer_paths": 36000,
+  "probe_trajectories": 360000,
+  "path_strength_evaluations": 252000,
+  "probe_strength_observations": 2520000,
+  "probe_level_evaluations": 2520000,
+  "continuation_likelihood_evaluations": 5040000,
+  "probes_per_record": {
+    "target": 3,
+    "neighbor": 3,
+    "capability": 4
+  },
+  "strict_later_label_strengths": [
+    0.25,
+    0.5
+  ],
+  "weak_probe_strength": 0.1,
+  "prediction_splits": [
+    "record",
+    "dataset",
+    "domain"
+  ],
+  "prediction_folds": 5,
+  "seed": 113,
+  "strength_selection": {
+    "dense_train_records": 500,
+    "dense_validation_records": 100,
+    "sparse_auxiliary_records": 2400,
+    "multifidelity_train_records": 2900,
+    "dense_train_raw_rows": 243000,
+    "dense_validation_raw_rows": 24300,
+    "dense_train_nonzero_candidates": 234000,
+    "dense_validation_nonzero_candidates": 23400,
+    "multifidelity_nonzero_candidates": 320400,
+    "validation_overlap": 0
+  }
+}

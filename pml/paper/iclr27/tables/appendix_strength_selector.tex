@@ -1,0 +1,42 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{3pt}
+\caption{Held-out dense-grid strength selection on 100 records.
+$A$ denotes candidate-strength features; MF denotes multi-fidelity training.}
+\label{tab:strength-selector}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\multicolumn{5}{c}{Suppression} \\
+\cmidrule(lr){1-5}
+Selector & Clean & Utility & N-dmg. & Abstain \\
+\midrule
+No intervention & .000 & .000 & .000 & 1.000 \\
+Fixed $|\alpha|=1$ & .098 & $-.041$ & .060 & .000 \\
+Dense $M+A+R$ & .106 & .013 & .016 & .473 \\
+MF $B+M+A$ & .060 & $-.018$ & .037 & .447 \\
+MF $M+A+R$ & .116 & .013 & .018 & .454 \\
+MF $B+M+A+R$ & .110 & .012 & .018 & .483 \\
+MF $B+M+L+A+R$ & .098 & .011 & .019 & .471 \\
+Dense oracle & .232 & .084 & -- & -- \\
+\bottomrule
+\end{tabular}
+
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\multicolumn{5}{c}{Enhancement} \\
+\cmidrule(lr){1-5}
+Selector & Clean & Utility & N-dmg. & Abstain \\
+\midrule
+No intervention & .000 & .000 & .000 & 1.000 \\
+Fixed $|\alpha|=1$ & .119 & $-.026$ & .052 & .000 \\
+Dense $M+A+R$ & .109 & .008 & .024 & .407 \\
+MF $B+M+A$ & .079 & $-.017$ & .042 & .312 \\
+MF $M+A+R$ & .117 & .008 & .022 & .391 \\
+MF $B+M+A+R$ & .112 & .010 & .024 & .422 \\
+MF $B+M+L+A+R$ & .113 & .010 & .026 & .417 \\
+Dense oracle & .260 & .089 & -- & -- \\
+\bottomrule
+\end{tabular}
+
+\end{table}

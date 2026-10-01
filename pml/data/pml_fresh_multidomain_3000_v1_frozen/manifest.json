@@ -1,0 +1,24 @@
+{
+  "dataset_name": "pml_fresh_multidomain_3000_v1_frozen",
+  "src_prefix": "/data/neural_controllers/pml/data/main_datas/pml_fresh_multidomain_3000_v1",
+  "output_dir": "/data/neural_controllers/pml/data/pml_fresh_multidomain_3000_v1_frozen",
+  "n_capability_per_record": 4,
+  "rebalance_seed": 113,
+  "source_paths": {
+    "records": "/data/neural_controllers/pml/data/main_datas/pml_fresh_multidomain_3000_v1.records.jsonl",
+    "eval_bank": "/data/neural_controllers/pml/data/main_datas/pml_fresh_multidomain_3000_v1.eval_bank.jsonl",
+    "assignments": "/data/neural_controllers/pml/data/main_datas/pml_fresh_multidomain_3000_v1.eval_assignments.jsonl",
+    "validation": "/data/neural_controllers/pml/data/main_datas/pml_fresh_multidomain_3000_v1.validation.json",
+    "sample_report": "/data/neural_controllers/pml/data/main_datas/pml_fresh_multidomain_3000_v1.sample_report.jsonl"
+  },
+  "output_paths": {
+    "records": "/data/neural_controllers/pml/data/pml_fresh_multidomain_3000_v1_frozen/records.jsonl",
+    "eval_bank": "/data/neural_controllers/pml/data/pml_fresh_multidomain_3000_v1_frozen/eval_bank.jsonl",
+    "assignments": "/data/neural_controllers/pml/data/pml_fresh_multidomain_3000_v1_frozen/eval_assignments.jsonl",
+    "validation": "/data/neural_controllers/pml/data/pml_fresh_multidomain_3000_v1_frozen/validation.json",
+    "manifest": "/data/neural_controllers/pml/data/pml_fresh_multidomain_3000_v1_frozen/manifest.json",
+    "readme": "/data/neural_controllers/pml/data/pml_fresh_multidomain_3000_v1_frozen/README.md",
+    "sample_report": "/data/neural_controllers/pml/data/pml_fresh_multidomain_3000_v1_frozen/sample_report.jsonl"
+  },
+  "command_hint": "PYTHONPATH=/data/neural_controllers/pml/src /data/miniconda3/envs/rfm/bin/python -m predictive_memory_localization.data.rebalance_capability_assignments --src-prefix /data/neural_controllers/pml/data/main_datas/pml_fresh_multidomain_3000_v1 --output-dir /data/neural_controllers/pml/data/pml_fresh_multidomain_3000_v1_frozen --n-capability-per-record 4 --seed 113 --overwrite"
+}

@@ -1,0 +1,78 @@
+\section{Signals and Predictive Models}
+
+PML evaluates a common path-prediction and decision pipeline over several
+direction families, separating the quality of a direction from the evidence
+used to forecast its later behavior.
+
+\subsection{Direction Families}
+
+\paragraph{Random control.}
+A seeded unit-norm Gaussian direction defines response thresholds and the
+paired null baseline. The logged \texttt{matched\_norm\_random} entry is
+duplicates this direction and is retained in the audit record.
+
+\paragraph{Mean difference.}
+For positive and contrast activation sets $\mathcal{H}^+$ and
+$\mathcal{H}^-$, we use
+\begin{equation}
+    \mathbf{v}_{\mathrm{mean}}=
+    \frac{\boldsymbol{\mu}^+-\boldsymbol{\mu}^-}
+    {\|\boldsymbol{\mu}^+-\boldsymbol{\mu}^-\|_2},
+\end{equation}
+the multi-example analogue of activation addition
+\citep{turner2023steering,rimsky-etal-2024-steering}.
+
+\paragraph{Linear and logistic probes.}
+Normalized classifier weights provide supervised discriminative directions
+without nonlinear feature learning.
+
+\paragraph{RFM/AGOP direction.}
+A recursive feature machine estimates task-adapted geometry through the average
+gradient outer product \citep{radhakrishnan2022mechanism}. Its leading
+eigenvector provides a low-rank direction, while spectrum, concentration, and
+alignment statistics become geometry features. A top-$k$ boundary study tests
+whether broader supervised subspaces trade selectivity for leverage.
+
+All directions are fitted independently per record and layer and injected at
+the selected residual block during evaluation. Detailed activation extraction,
+fitting hyperparameters, inference settings, and continuation scoring are
+included in the released protocol.
+
+\subsection{Predictive Evidence and Grouped Evaluation}
+
+Static localization $L$ summarizes class separation, projection, saliency, and
+direction agreement; RFM geometry $G$ summarizes spectral concentration and
+alignment. These feature groups are nested with baseline belief $B$, metadata
+$M$, and the low-dose response $R$, allowing the contribution of static
+localization to be measured separately from the observed response.
+
+We fit class-balanced logistic regression and random forests for target,
+damage, and clean outcomes. Five-fold evaluation groups all paths from the same
+record, dataset, or domain, preventing related trajectories from crossing a
+train--test boundary. We report prevalence, AUROC, and average precision in the
+main paper;
+additional classification and calibration metrics are in the released
+artifacts.
+
+\subsection{Risk-Aware Strength Selection}
+
+For each nonzero candidate coefficient, the selector predicts clean-effect
+probability and continuous utility. With $q(\alpha)\in\{-1,+1\}$ denoting the
+requested suppression or enhancement sign, measured utility is
+\begin{equation}
+\begin{aligned}
+    u_i(\alpha)={}&q(\alpha)\Delta^T_i(\alpha)
+    -\max\{0,-\Delta^N_i(\alpha)\}\\
+    &-\max\{0,-\Delta^C_i(\alpha)\}.
+\end{aligned}
+\end{equation}
+Target movement is rewarded and collateral margin decreases receive unit
+penalties. The decision score is
+\begin{equation}
+    \widehat{u}_i(\alpha)+0.1\widehat{p}_i(\mathrm{clean}\mid\alpha)
+    -0.01|\alpha|.
+\end{equation}
+The policy selects the highest-scoring coefficient and abstains when its score
+is nonpositive. This utility is defined on teacher-forced answer-margin changes.
+We evaluate it against both no intervention,
+whose utility is zero by construction, and a train-tuned fixed coefficient.

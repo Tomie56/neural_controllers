@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{1.8pt}
+\caption{Path-conditioned free-generation endpoint stress tests on 100 records
+per model. G/D counts unique target prompts with correctness gain/damage at any
+nonzero coefficient. Text and clause changes are measured against $\alpha=0$.
+Qwen3.5 uses the unmatched raw-alpha stress protocol.}
+\label{tab:endpoint-validation}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrrrrr@{}}
+\toprule
+\multicolumn{6}{c}{Qwen3-1.7B} \\
+\cmidrule(lr){1-6}
+Direction & Paths & Base & G/D & Text $\Delta$ & Clause $\Delta$ \\
+\midrule
+Random & 24 & 5.6\% & 1/0 & 37.2\% & 21.5\% \\
+Mean diff. & 24 & 2.8\% & 0/1 & 31.9\% & 19.6\% \\
+Logistic & 28 & 4.8\% & 0/0 & 25.4\% & 12.9\% \\
+RFM/AGOP & 24 & 6.9\% & 0/1 & 33.2\% & 13.2\% \\
+\midrule
+\multicolumn{6}{c}{Qwen3.5-2B} \\
+\cmidrule(lr){1-6}
+Random & 24 & 8.3\% & 0/0 & 45.0\% & 19.4\% \\
+Mean diff. & 24 & 11.1\% & 2/4 & 50.3\% & 30.4\% \\
+Logistic & 28 & 8.3\% & 3/2 & 52.1\% & 32.6\% \\
+RFM/AGOP & 24 & 8.3\% & 2/4 & 47.4\% & 28.5\% \\
+\bottomrule
+\end{tabular*}
+
+\end{table}

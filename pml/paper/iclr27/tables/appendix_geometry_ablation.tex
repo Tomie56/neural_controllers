@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\small
+\caption{RFM-cohort geometry ablation, averaged over record-, dataset-, and
+domain-grouped splits. $G$ contains AGOP spectrum and alignment features.
+Deltas compare $B+M+L+G$ with the $B+M+L$ base.}
+\label{tab:geometry-ablation}
+\begin{tabular}{lrrrr}
+\toprule
+Outcome & Base & $+G$ & $\Delta$ AUC & $\Delta$ AP \\
+\midrule
+Suppression & .651 & .646 & $-.005$ & $-.007$ \\
+Enhancement & .645 & .680 & $+.035$ & $+.005$ \\
+Target-any & .666 & .688 & $+.022$ & $+.014$ \\
+Neighbor damage & .632 & .635 & $+.003$ & $+.008$ \\
+Capability damage & .622 & .589 & $-.033$ & $-.021$ \\
+Clean suppression & .652 & .649 & $-.002$ & $-.003$ \\
+Clean enhancement & .644 & .680 & $+.037$ & $-.002$ \\
+Clean-any & .666 & .690 & $+.025$ & $+.018$ \\
+\bottomrule
+\end{tabular}
+
+\end{table}

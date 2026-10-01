@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{2.6pt}
+\caption{Sensitivity to the independent expert semantic audit. The stratified
+audit covers 108 records (12 per source): 65 pass, 32 minor issue, and 11 fail.
+Cells are complete-predictor AUROC/AP after retaining all records, excluding the
+11 fails, or excluding all 43 non-pass records.}
+\label{tab:semantic-audit-sensitivity}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrr@{}}
+\toprule
+Records retained & Target & Clean & N-dmg. & C-dmg. \\
+\midrule
+All 3,000 & .815/.357 & .810/.330 & .858/.396 & .856/.382 \\
+Exclude fails (2,989) & .818/.369 & .813/.341 & .858/.392 & .855/.384 \\
+Exclude non-pass (2,957) & .817/.368 & .813/.344 & .857/.398 & .853/.391 \\
+\bottomrule
+\end{tabular*}
+
+\end{table*}

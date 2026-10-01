@@ -1,0 +1,43 @@
+{
+  "data_dir": "/data/neural_controllers/pml/data/pml_fresh_multidomain_3000_v1_frozen",
+  "exclude_record_ids_file": "/data/neural_controllers/pml/data/pml_replication_500_stratified_seed113/record_ids.txt",
+  "exclude_record_ids_sha256": "1b408955d4a911e42a525b2ca41122f8a758422526314190a161dbb196247934",
+  "n_records": 100,
+  "seed": 127,
+  "record_ids_path": "/data/neural_controllers/pml/data/pml_scale_calibration_100_seed127/record_ids.txt",
+  "record_ids_sha256": "282201e43c234151ef6e1935029198333ee50e8a87bf849b3fdf41a9514970cf",
+  "available_population_records": 2500,
+  "excluded_records": 500,
+  "overlap_count": 0,
+  "dataset_counts": {
+    "Rowan/hellaswag": 5,
+    "TIGER-Lab/MMLU-Pro": 34,
+    "allenai/ai2_arc": 12,
+    "allenai/openbookqa": 7,
+    "allenai/qasc": 5,
+    "allenai/sciq": 7,
+    "edinburgh-dawg/mmlu-redux-2.0": 18,
+    "livebench/math": 5,
+    "livebench/reasoning": 7
+  },
+  "domain_counts": {
+    "elementary_science": 7,
+    "recent_corrected_biology": 3,
+    "recent_corrected_chemistry": 3,
+    "recent_corrected_computer_security": 3,
+    "recent_corrected_global_facts": 3,
+    "recent_corrected_machine_learning": 3,
+    "recent_corrected_physics": 3,
+    "recent_multidomain_academic": 34,
+    "recent_objective_math": 5,
+    "recent_objective_reasoning": 7,
+    "science_composition": 5,
+    "science_exam": 12,
+    "science_qa": 7,
+    "situated_commonsense": 5
+  },
+  "freshness_counts": {
+    "classic_pre_2024": 36,
+    "recent_2024_2026": 64
+  }
+}

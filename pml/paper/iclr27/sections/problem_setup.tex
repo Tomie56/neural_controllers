@@ -1,0 +1,62 @@
+\section{Predictive Memory Localization}
+
+PML connects a localized residual representation to a measured strength-indexed
+intervention path and a held-out decision (Figure~\ref{fig:pml-pipeline}). Here,
+``memory localization'' denotes a record-conditioned internal signal associated
+with an answer relation, not a claim that the relation resides in one unique
+physical component.
+
+\subsection{Records, Probes, and Interventions}
+
+Record $i$ contains target prompts $\mathcal{T}_i$, semantic-neighbor prompts
+$\mathcal{N}_i$, and general-capability prompts $\mathcal{C}_i$. The first set
+expresses the behavior to suppress or enhance; the latter two test whether
+nearby knowledge or unrelated abilities are preserved. For prompt $x$ with
+desired answer $y^+$ and contrast $y^-$, the answer margin is
+\begin{equation}
+    m(x)=\log p(y^+\mid x)-\log p(y^-\mid x).
+\end{equation}
+All outcomes are changes from the unperturbed margin, making paths comparable
+across records with different baseline confidence.
+
+At layer $\ell$, method $s$ constructs a unit-norm record-specific direction
+$\mathbf{v}_{i\ell s}$. Intervention strength $\alpha$ modifies the residual
+activation as
+\begin{equation}
+    \mathbf{h}'_{\ell}=\mathbf{h}_{\ell}+\alpha\mathbf{v}_{i\ell s}.
+\end{equation}
+Negative and positive coefficients test suppression and enhancement with the
+same direction. We write $\Delta^T_i(\alpha)$ for signed target-margin movement
+and $\Delta^N_i(\alpha),\Delta^C_i(\alpha)$ for neighbor and capability
+movement; a sufficiently negative collateral change is damage.
+
+\subsection{Random-Calibrated Intervention Paths}
+
+Target, neighbor, and capability responses have different null scales, so
+random directions define separate 95th-percentile thresholds $\tau_T$,
+$\tau_N$, and $\tau_C$. A target effect crosses $\tau_T$ in the intended
+direction, while neighbor or capability damage crosses the corresponding
+negative threshold. A \emph{clean strength} produces a target effect while
+crossing neither damage threshold at that same coefficient.
+
+Across an ordered, finite strength set, these events form a measured-grid
+intervention path. Target and collateral onset identify the first observed
+crossing, and adjacent clean strengths form an observed clean region. We use
+these grid-defined events as the path estimand.
+The confirmatory prediction task focuses on four directly measured events at
+held-out stronger coefficients:
+\emph{Target-any}, semantic-neighbor damage,
+capability damage, and \emph{Clean-any}. Percentages count
+record--method--layer paths rather than prompts or individual strengths.
+
+\subsection{Prediction Task}
+
+PML forecasts later path outcomes from progressively stronger evidence.
+Baseline belief $B$ and metadata $M$ are augmented with static localization
+features $L$ and, for RFM, geometry features $G$. Low-dose response features
+$R$ measure target and collateral movement at $\alpha=\pm0.1$. Because $R$
+requires intervention, it is a cheap dynamic diagnostic rather than static
+localization. The central comparisons test whether $L$ or $G$ improves on
+$B+M$, and whether the strength-disjoint response $R$ forecasts outcomes at
+$|\alpha|\in\{0.25,0.5\}$. A downstream policy then uses these forecasts to
+select a coefficient or abstain.

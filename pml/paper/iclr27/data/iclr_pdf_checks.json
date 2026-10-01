@@ -1,0 +1,21 @@
+{
+  "main_text_end_page": 9,
+  "pdfs": {
+    "main": {
+      "pages": 13,
+      "sha256": "0e192da23791c7209e20cc2f4c49423f34a83a7772b8d14244076d84b25328d8",
+      "letter": true,
+      "fonts_embedded_type1_or_truetype": true,
+      "anonymous_header_and_metadata": true,
+      "no_unresolved_references_or_overfull_boxes": true
+    },
+    "supplement": {
+      "pages": 10,
+      "sha256": "b8c48ed2f142a43aa6885a5936b1058dc02fb0cb8ee2bc6ac593c99b1ca8c5b8",
+      "letter": true,
+      "fonts_embedded_type1_or_truetype": true,
+      "anonymous_header_and_metadata": true,
+      "no_unresolved_references_or_overfull_boxes": true
+    }
+  }
+}

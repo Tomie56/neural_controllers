@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\small
+\renewcommand{\arraystretch}{1.05}
+\setlength{\tabcolsep}{1.5pt}
+\newcommand{\selectorcell}[1]{\raisebox{4pt}{#1}}
+\caption{Held-out decisions on 100 records and 900 paths per objective. Utility
+differences use a paired record bootstrap; N-dmg. is fixed$\to$selector.}
+\label{tab:main-strength-selector}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lcccc@{}}
+\toprule
+\selectorcell{Objective} & \shortstack{$\Delta U$\\vs. 0} & \shortstack{$\Delta U$\\vs. fixed} & \selectorcell{N-dmg.} & \selectorcell{Abstain} \\
+\midrule
+\selectorcell{Suppression} & \shortstack{\textbf{.013}\\{[.003,.025]}} & \shortstack{\textbf{.055}\\{[.044,.066]}} & \selectorcell{.060$\to$\textbf{.018}} & \selectorcell{.454} \\
+\selectorcell{Enhancement} & \shortstack{.008\\{[$-.001$,.019]}} & \shortstack{\textbf{.034}\\{[.024,.044]}} & \selectorcell{.052$\to$\textbf{.022}} & \selectorcell{.391} \\
+\bottomrule
+\end{tabular*}
+
+\end{table}

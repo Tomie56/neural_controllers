@@ -1,0 +1,30 @@
+alg_name: MEMIT
+model_name: /data/Rollout-Steering-GRPO/Qwen3-1.7B-Base
+device: 0
+
+layers: [5, 6, 7, 8]
+layer_selection: all
+fact_token: subject_last
+v_num_grad_steps: 20
+v_lr: 5e-1
+v_loss_layer: 27
+v_weight_decay: 0.5
+clamp_norm_factor: 4
+kl_factor: 0.0625
+mom2_adjustment: false
+mom2_update_weight: 15000
+batch_size: 1
+
+rewrite_module_tmp: model.layers.{}.mlp.down_proj
+layer_module_tmp: model.layers.{}
+mlp_module_tmp: model.layers.{}.mlp
+attn_module_tmp: model.layers.{}.self_attn
+ln_f_module: model.norm
+lm_head_module: model.embed_tokens
+
+mom2_dataset: wikipedia
+mom2_n_samples: 1000
+mom2_dtype: float32
+stats_dir: /data/neural_controllers/pml/results/easyedit_stats
+max_length: 64
+model_parallel: false

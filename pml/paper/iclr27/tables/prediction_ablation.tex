@@ -1,0 +1,17 @@
+\begin{center}
+\centering
+\small
+\captionof{table}{Incremental prediction value over matched grouped evaluations. $L$ is
+static localization and $R$ is observed only at $|\alpha|=0.1$; later labels use
+$|\alpha|\in\{0.25,0.5\}$.}
+\label{tab:prediction-ablation}
+\begin{tabular}{@{}lrrl@{}}
+\toprule
+Added evidence & $\Delta$AUROC & $\Delta$AP & Scope \\
+\midrule
+Static $L$ over $B+M$ & +.002 & +.000 & 144 settings \\
+Weak $R$ over $B+M$ & \textbf{+.177} & \textbf{+.182} & 144 settings \\
+$L$ after $R$ & +.001 & +.000 & 144 settings \\
+\bottomrule
+\end{tabular}
+\end{center}

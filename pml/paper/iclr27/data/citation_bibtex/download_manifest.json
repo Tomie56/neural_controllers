@@ -1,0 +1,375 @@
+{
+  "retrieved_at": "2026-09-23T13:22:29.407633+00:00",
+  "records": [
+    {
+      "key": "geva-etal-2021-transformer",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2021.emnlp-main.446.bib",
+      "status": "downloaded",
+      "file": "geva-etal-2021-transformer.bib",
+      "resolved_url": "https://aclanthology.org/2021.emnlp-main.446.bib",
+      "sha256": "0428b81c859b9b2c85e9aaf682f00bbd1caf88966b40a23a41c7edcb086303c7",
+      "bytes": 729
+    },
+    {
+      "key": "dai-etal-2022-knowledge",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2022.acl-long.581.bib",
+      "status": "downloaded",
+      "file": "dai-etal-2022-knowledge.bib",
+      "resolved_url": "https://aclanthology.org/2022.acl-long.581.bib",
+      "sha256": "41057f58b0daf1642c89fb4b10c3cf0373499b79c12d6fcd546f6da08a55a7ad",
+      "bytes": 719
+    },
+    {
+      "key": "de-cao-etal-2021-editing",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2021.emnlp-main.522.bib",
+      "status": "downloaded",
+      "file": "de-cao-etal-2021-editing.bib",
+      "resolved_url": "https://aclanthology.org/2021.emnlp-main.522.bib",
+      "sha256": "6746414be4c8574af75f19acc64339af08e4ead5c2e4d329fb71871b749563f5",
+      "bytes": 693
+    },
+    {
+      "key": "NEURIPS2022_6f1d43d5",
+      "source_kind": "conference_export",
+      "source_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/6f1d43d5a82a37e89b0665b33bf3a182-Abstract-Conference.html",
+      "status": "downloaded",
+      "file": "NEURIPS2022_6f1d43d5.bib",
+      "resolved_url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/6f1d43d5a82a37e89b0665b33bf3a182-Bibtex-Conference.bib",
+      "sha256": "886f78b2ab0cceff3a4fab79b3c96440346bffd48c3351a09feb8917ab439ea2",
+      "bytes": 587
+    },
+    {
+      "key": "mitchell2022fast",
+      "source_kind": "author_inline_export",
+      "source_url": "https://raw.githubusercontent.com/eric-mitchell/mend/main/README.md",
+      "status": "downloaded",
+      "file": "mitchell2022fast.bib",
+      "resolved_url": "https://raw.githubusercontent.com/eric-mitchell/mend/main/README.md",
+      "sha256": "9c2fa6ad0a8c59486bbbcb77b71c2e5f68815ef4d8f2790b27cafee871b36cd6",
+      "bytes": 322
+    },
+    {
+      "key": "mitchell22a",
+      "source_kind": "conference_inline_export",
+      "source_url": "https://proceedings.mlr.press/v162/mitchell22a.html",
+      "status": "downloaded",
+      "file": "mitchell22a.bib",
+      "resolved_url": "https://proceedings.mlr.press/v162/mitchell22a.html",
+      "sha256": "c0671eb691f57d49cf5ef4787dd4c51b3af4c201e522d41719f001a2ca2d1b35",
+      "bytes": 2044
+    },
+    {
+      "key": "meng2023mass",
+      "source_kind": "author_inline_export",
+      "source_url": "https://memit.baulab.info/",
+      "status": "downloaded",
+      "file": "meng2023mass.bib",
+      "resolved_url": "https://memit.baulab.info/",
+      "sha256": "6ba9bb1c8e587f4bcd32ced67a9f1c098eef291f7ad85b14b71dff4a40e53fba",
+      "bytes": 273
+    },
+    {
+      "key": "NEURIPS2023_3927bbdc",
+      "source_kind": "conference_export",
+      "source_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/3927bbdcf0e8d1fa8aa23c26f358a281-Abstract-Conference.html",
+      "status": "downloaded",
+      "file": "NEURIPS2023_3927bbdc.bib",
+      "resolved_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/3927bbdcf0e8d1fa8aa23c26f358a281-Bibtex-Conference.bib",
+      "sha256": "4f990840bfbfe0a73d1079970e1c3ae690f28259075cfa5ff432d2b298858403",
+      "bytes": 670
+    },
+    {
+      "key": "lee-etal-2025-localization",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2025.emnlp-main.1109.bib",
+      "status": "downloaded",
+      "file": "lee-etal-2025-localization.bib",
+      "resolved_url": "https://aclanthology.org/2025.emnlp-main.1109.bib",
+      "sha256": "3599972a2f13870422c0fa8733750b9d3cc508b02a22342754ad0675942a1a43",
+      "bytes": 818
+    },
+    {
+      "key": "turner2023steering",
+      "source_kind": "arxiv_export",
+      "source_url": "https://arxiv.org/bibtex/2308.10248",
+      "status": "downloaded",
+      "file": "turner2023steering.bib",
+      "resolved_url": "https://arxiv.org/bibtex/2308.10248",
+      "sha256": "992f71263484551f2ea5ebb6b2cb31eab25d2da23919251788c3ef3a31954c40",
+      "bytes": 416
+    },
+    {
+      "key": "rimsky-etal-2024-steering",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2024.acl-long.828.bib",
+      "status": "downloaded",
+      "file": "rimsky-etal-2024-steering.bib",
+      "resolved_url": "https://aclanthology.org/2024.acl-long.828.bib",
+      "sha256": "53afca56aa9c9c221b535654f14ddf733f94b73444c4aafca8ebe338a33b3a87",
+      "bytes": 741
+    },
+    {
+      "key": "NEURIPS2023_81b83900",
+      "source_kind": "conference_export",
+      "source_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/81b8390039b7302c909cb769f8b6cd93-Abstract-Conference.html",
+      "status": "downloaded",
+      "file": "NEURIPS2023_81b83900.bib",
+      "resolved_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/81b8390039b7302c909cb769f8b6cd93-Bibtex-Conference.bib",
+      "sha256": "d2acccb0f2e14b77404ec8ebd6a88466b6214bfb9e188f56f58a40fda910602a",
+      "bytes": 648
+    },
+    {
+      "key": "stoehr-etal-2024-activation",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2024.findings-emnlp.479.bib",
+      "status": "downloaded",
+      "file": "stoehr-etal-2024-activation.bib",
+      "resolved_url": "https://aclanthology.org/2024.findings-emnlp.479.bib",
+      "sha256": "df07e37855a2a32a68e4b641f5e5832d4e5800186c7b1454438054d062574d83",
+      "bytes": 743
+    },
+    {
+      "key": "zou2023representation",
+      "source_kind": "arxiv_export",
+      "source_url": "https://arxiv.org/bibtex/2310.01405",
+      "status": "downloaded",
+      "file": "zou2023representation.bib",
+      "resolved_url": "https://arxiv.org/bibtex/2310.01405",
+      "sha256": "81522ed431856aa0ab36a3919d7d241f8999e0cf7ce3fa574b29c080814528a2",
+      "bytes": 665
+    },
+    {
+      "key": "radhakrishnan2022mechanism",
+      "source_kind": "publisher_crossref_export",
+      "source_url": "https://api.crossref.org/works/10.1126/science.adi5639/transform/application/x-bibtex",
+      "status": "downloaded",
+      "file": "radhakrishnan2022mechanism.bib",
+      "resolved_url": "https://api.crossref.org/works/10.1126/science.adi5639/transform/application/x-bibtex",
+      "sha256": "f5d9c23f85ac895aeae6834c16dc4ac3d1139b92d37c49aa26f75441252fc8e0",
+      "bytes": 505
+    },
+    {
+      "key": "wu25a",
+      "source_kind": "conference_inline_export",
+      "source_url": "https://proceedings.mlr.press/v267/wu25a.html",
+      "status": "downloaded",
+      "file": "wu25a.bib",
+      "resolved_url": "https://proceedings.mlr.press/v267/wu25a.html",
+      "sha256": "cf15df4a8adcf5cefeda0984e137a026dc337330f06439c9cc9b8332a6c731d0",
+      "bytes": 2087
+    },
+    {
+      "key": "silva-etal-2025-steering",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2025.acl-long.974.bib",
+      "status": "downloaded",
+      "file": "silva-etal-2025-steering.bib",
+      "resolved_url": "https://aclanthology.org/2025.acl-long.974.bib",
+      "sha256": "3281eae12caa86c028b96c3bf006110ec3bae866a8c260bb20a1edca7cf83504",
+      "bytes": 830
+    },
+    {
+      "key": "goyal-iii-2026-steering",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2026.eacl-long.268.bib",
+      "status": "downloaded",
+      "file": "goyal-iii-2026-steering.bib",
+      "resolved_url": "https://aclanthology.org/2026.eacl-long.268.bib",
+      "sha256": "f5d141e7faaa15fac4178d3e68da30acecaf4b62c1e5abfb26842fc9fe83762b",
+      "bytes": 752
+    },
+    {
+      "key": "pmlr-v235-singh24d",
+      "source_kind": "conference_inline_export",
+      "source_url": "https://proceedings.mlr.press/v235/singh24d.html",
+      "status": "downloaded",
+      "file": "pmlr-v235-singh24d.bib",
+      "resolved_url": "https://proceedings.mlr.press/v235/singh24d.html",
+      "sha256": "61870e6126e8c6dbbd7aeb018fd86818cbee407781cde591169469d071ed5a96",
+      "bytes": 1849
+    },
+    {
+      "key": "tan2024steering",
+      "source_kind": "conference_export",
+      "source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/fb3ad59a84799bfb8d700e56d19c231b-Abstract-Conference.html",
+      "status": "downloaded",
+      "file": "tan2024steering.bib",
+      "resolved_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/fb3ad59a84799bfb8d700e56d19c231b-Bibtex-Conference.bib",
+      "sha256": "67c8427e41c2e566898b6765da243baf6e7102abc00ca2b82c0047b250e7bc56",
+      "bytes": 693
+    },
+    {
+      "key": "pres2024reliable",
+      "source_kind": "arxiv_export",
+      "source_url": "https://arxiv.org/bibtex/2410.17245",
+      "status": "downloaded",
+      "file": "pres2024reliable.bib",
+      "resolved_url": "https://arxiv.org/bibtex/2410.17245",
+      "sha256": "e1979573b92aa662992d7d23407a3d043fa491d346ec191b19c90ebf2df78006",
+      "bytes": 373
+    },
+    {
+      "key": "xu-etal-2026-controllable",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2026.acl-long.1443.bib",
+      "status": "downloaded",
+      "file": "xu-etal-2026-controllable.bib",
+      "resolved_url": "https://aclanthology.org/2026.acl-long.1443.bib",
+      "sha256": "e2991fb8aa306e22a398216b3b8063ef5b4d6efb48df62e47bbaa78b15d40d41",
+      "bytes": 985
+    },
+    {
+      "key": "xu-etal-2026-steering",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2026.acl-long.1463.bib",
+      "status": "downloaded",
+      "file": "xu-etal-2026-steering.bib",
+      "resolved_url": "https://aclanthology.org/2026.acl-long.1463.bib",
+      "sha256": "dfc3b54cccaf5dd3fcc5510d9a68dbd18970d727e4ff01ce0fdd15c45950e020",
+      "bytes": 983
+    },
+    {
+      "key": "fan2026steerable",
+      "source_kind": "arxiv_export",
+      "source_url": "https://arxiv.org/bibtex/2606.11599",
+      "status": "downloaded",
+      "file": "fan2026steerable.bib",
+      "resolved_url": "https://arxiv.org/bibtex/2606.11599",
+      "sha256": "e771317f10a21dfaf5a1d9b03eb16b1058be6dcfe1eac7dc72e8e4c83d92e1e4",
+      "bytes": 310
+    },
+    {
+      "key": "yao-etal-2023-editing",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2023.emnlp-main.632.bib",
+      "status": "downloaded",
+      "file": "yao-etal-2023-editing.bib",
+      "resolved_url": "https://aclanthology.org/2023.emnlp-main.632.bib",
+      "sha256": "d572421b50db81b82f581d5f0820be335f116102ba3a68ee972fbb49c7b21f15",
+      "bytes": 757
+    },
+    {
+      "key": "wang-etal-2024-easyedit",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2024.acl-demos.9.bib",
+      "status": "downloaded",
+      "file": "wang-etal-2024-easyedit.bib",
+      "resolved_url": "https://aclanthology.org/2024.acl-demos.9.bib",
+      "sha256": "88df16558c81fb604753a63ba0dc38d6441456126005f1b84a3936244dd4bfba",
+      "bytes": 944
+    },
+    {
+      "key": "wang2024mmlupro",
+      "source_kind": "conference_export",
+      "source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ad236edc564f3e3156e1b2feafb99a24-Abstract.html",
+      "status": "downloaded",
+      "file": "wang2024mmlupro.bib",
+      "resolved_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/ad236edc564f3e3156e1b2feafb99a24-Bibtex-Datasets_and_Benchmarks_Track.bib",
+      "sha256": "505e99b4ac894fb9377659730ebdc0fd3b98c9a5e71c944b2daede8815bdd39f",
+      "bytes": 863
+    },
+    {
+      "key": "gema2024mmluredux",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/2025.naacl-long.262.bib",
+      "status": "downloaded",
+      "file": "gema2024mmluredux.bib",
+      "resolved_url": "https://aclanthology.org/2025.naacl-long.262.bib",
+      "sha256": "5ac3a72b50d11dffa4c325df177726378ca6151a87fabb791aa6f5759e5a352e",
+      "bytes": 1104
+    },
+    {
+      "key": "clark2018arc",
+      "source_kind": "arxiv_export",
+      "source_url": "https://arxiv.org/bibtex/1803.05457",
+      "status": "downloaded",
+      "file": "clark2018arc.bib",
+      "resolved_url": "https://arxiv.org/bibtex/1803.05457",
+      "sha256": "4effb4cfd6880b565924fe8d341ce95f4dc0aea2683d05e2c03e711679ea503f",
+      "bytes": 431
+    },
+    {
+      "key": "mihaylov-etal-2018-suit",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/D18-1260.bib",
+      "status": "downloaded",
+      "file": "mihaylov-etal-2018-suit.bib",
+      "resolved_url": "https://aclanthology.org/D18-1260.bib",
+      "sha256": "8ed41b3c6ea2886da0b977a71a1ddae99956ac9529f36a8619dc230f07f6ac14",
+      "bytes": 727
+    },
+    {
+      "key": "welbl-etal-2017-crowdsourcing",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/W17-4413.bib",
+      "status": "downloaded",
+      "file": "welbl-etal-2017-crowdsourcing.bib",
+      "resolved_url": "https://aclanthology.org/W17-4413.bib",
+      "sha256": "951ebbfc2a0a01224475f5e6bdc1c2786f9bd9ee8ea6eacfe7b75a9bfd729ccc",
+      "bytes": 613
+    },
+    {
+      "key": "white2025livebench",
+      "source_kind": "conference_export",
+      "source_url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/e4a46394ba5378b3f9a186a5b4c650d1-Abstract-Conference.html",
+      "status": "downloaded",
+      "file": "white2025livebench.bib",
+      "resolved_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/e4a46394ba5378b3f9a186a5b4c650d1-Bibtex-Conference.bib",
+      "sha256": "adaaf02c2bcdb0ed4163b00339e7843519f5540f4929ed6f9ca6c96c30fbceb4",
+      "bytes": 777
+    },
+    {
+      "key": "zellers-etal-2019-hellaswag",
+      "source_kind": "conference_export",
+      "source_url": "https://aclanthology.org/P19-1472.bib",
+      "status": "downloaded",
+      "file": "zellers-etal-2019-hellaswag.bib",
+      "resolved_url": "https://aclanthology.org/P19-1472.bib",
+      "sha256": "748d3327a10099d9ae9b2bd2521567b235226ecd5f6c2d4d4354a07039f7f0ce",
+      "bytes": 681
+    },
+    {
+      "key": "khot2020qasc",
+      "source_kind": "publisher_crossref_export",
+      "source_url": "https://api.crossref.org/works/10.1609/aaai.v34i05.6319/transform/application/x-bibtex",
+      "status": "downloaded",
+      "file": "khot2020qasc.bib",
+      "resolved_url": "https://api.crossref.org/works/10.1609/aaai.v34i05.6319/transform/application/x-bibtex",
+      "sha256": "0b27d1b140360e1a6a1bac8c1649dbadb44818619598c9ef24bf83a6bf4d1fcf",
+      "bytes": 519
+    },
+    {
+      "key": "yang2025qwen3",
+      "source_kind": "arxiv_export",
+      "source_url": "https://arxiv.org/bibtex/2505.09388",
+      "status": "downloaded",
+      "file": "yang2025qwen3.bib",
+      "resolved_url": "https://arxiv.org/bibtex/2505.09388",
+      "sha256": "2fba437d35a4bd71cc9d1aad1e10cbfb8376c813c41e525104ba0534ceee391b",
+      "bytes": 1129
+    },
+    {
+      "key": "qwen2026qwen35",
+      "source_kind": "model_card_inline_export",
+      "source_url": "https://huggingface.co/Qwen/Qwen3.5-2B-Base/raw/main/README.md",
+      "status": "downloaded",
+      "file": "qwen2026qwen35.bib",
+      "resolved_url": "https://huggingface.co/Qwen/Qwen3.5-2B-Base/raw/main/README.md",
+      "sha256": "2ae0d82d0230b78678f8ed601b42f8517b212c1edce77dda5e0c37e726afa765",
+      "bytes": 198
+    },
+    {
+      "key": "liu2026ministral3",
+      "source_kind": "arxiv_export",
+      "source_url": "https://arxiv.org/bibtex/2601.08584",
+      "status": "downloaded",
+      "file": "liu2026ministral3.bib",
+      "resolved_url": "https://arxiv.org/bibtex/2601.08584",
+      "sha256": "8671ba781abe343d3705f0dcd9dd78bba79b6821598e6fcbafe611940fe241a0",
+      "bytes": 2551
+    }
+  ]
+}

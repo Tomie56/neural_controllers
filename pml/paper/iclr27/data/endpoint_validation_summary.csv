@@ -1,0 +1,5 @@
+method,n_paths,n_target_prompts,baseline_target_correct_rate,unique_target_gain_count,unique_target_damage_count,target_text_changed_rate
+logistic,28,84,0.047619047619047616,0,0,0.2544642857142857
+mean_difference,24,72,0.027777777777777776,0,1,0.3194444444444444
+random,24,72,0.05555555555555555,1,0,0.3715277777777778
+rfm_agop_top1,24,72,0.06944444444444445,0,1,0.3315972222222222

@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\caption{Full later-path prediction performance in the all-method random-forest cohort, averaged over record-, dataset-, and domain-grouped splits. Each cell is AUROC/AP. $B$ denotes identifiers and base margins, $M$ method/layer metadata, $L$ static localization, and $R$ the disjoint response at $|\alpha|=0.1$. Later labels use only $|\alpha|\in\{0.25,0.5\}$.}
+\label{tab:full-prediction-main}
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+Outcome & $B+M$ & $B+M+L$ & $M+R$ & $B+M+R$ & $B+M+L+R$ \\
+\midrule
+Suppression & 0.675/0.110 & 0.678/0.108 & 0.859/0.326 & 0.863/0.303 & 0.866/0.307 \\
+Enhancement & 0.628/0.093 & 0.628/0.096 & 0.839/0.290 & 0.844/0.268 & 0.847/0.272 \\
+Target-any & 0.677/0.196 & 0.679/0.200 & 0.798/0.345 & 0.806/0.324 & 0.808/0.328 \\
+Neighbor damage & 0.635/0.117 & 0.638/0.117 & 0.850/0.373 & 0.852/0.366 & 0.852/0.366 \\
+Capability damage & 0.660/0.170 & 0.650/0.156 & 0.854/0.387 & 0.862/0.404 & 0.863/0.403 \\
+Clean suppression & 0.680/0.104 & 0.675/0.102 & 0.855/0.302 & 0.863/0.286 & 0.861/0.286 \\
+Clean enhancement & 0.628/0.086 & 0.632/0.088 & 0.839/0.274 & 0.845/0.257 & 0.846/0.260 \\
+Clean-any & 0.677/0.185 & 0.680/0.185 & 0.795/0.325 & 0.801/0.302 & 0.805/0.302 \\
+\bottomrule
+\end{tabular}
+\end{table*}

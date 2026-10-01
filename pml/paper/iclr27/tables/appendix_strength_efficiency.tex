@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Expected intervention evaluations per held-out path. Learned policies
+use two weak probes and execute the selected coefficient only when they do not
+abstain. Reduction is relative to evaluating all 26 nonzero dense-grid
+coefficients.}
+\label{tab:strength-efficiency}
+\begin{tabular}{lrr}
+\toprule
+Policy & Suppression & Enhancement \\
+\midrule
+Train-tuned fixed & 1.000 & 1.000 \\
+Dense-only $M+A+R$ & 2.527 & 2.593 \\
+Multi-fidelity $M+A+R$ & 2.546 & 2.609 \\
+Dense scan & 26.000 & 26.000 \\
+\midrule
+Multi-fidelity reduction & 90.2\% & 90.0\% \\
+\bottomrule
+\end{tabular}
+
+\end{table}

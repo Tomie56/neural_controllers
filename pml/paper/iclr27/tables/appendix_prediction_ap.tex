@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Full random-forest average precision averaged over record-, dataset-,
+and domain-grouped splits in the all-method cohort. Positive rates range from
+approximately 5--12\%, so AP complements AUROC.}
+\label{tab:full-prediction-ap}
+\begin{tabular}{lrrrrr}
+\toprule
+Outcome & $B+M$ & $B+M+L$ & $M+R$ & $B+M+R$ & $B+M+L+R$ \\
+\midrule
+Suppression & .110 & .108 & .326 & .303 & .307 \\
+Enhancement & .093 & .096 & .290 & .268 & .272 \\
+Target-any & .196 & .200 & .345 & .324 & .328 \\
+Neighbor damage & .117 & .117 & .373 & .366 & .366 \\
+Capability damage & .170 & .156 & .387 & .404 & .403 \\
+Clean suppression & .104 & .102 & .302 & .286 & .286 \\
+Clean enhancement & .086 & .088 & .274 & .257 & .260 \\
+Clean-any & .185 & .185 & .325 & .302 & .302 \\
+\bottomrule
+\end{tabular}
+\end{table*}

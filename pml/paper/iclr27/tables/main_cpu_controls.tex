@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\small
+\renewcommand{\arraystretch}{1.05}
+\setlength{\tabcolsep}{2.5pt}
+\caption{Record-held-out prediction on Qwen3-1.7B-Base. Cells are AUROC/AP;
+Prev. is label prevalence. Scalar is training-free, $R$-only uses the
+multivariate weak profile, and Full uses $B+M+L+R$.}
+\label{tab:cpu-controls}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrrrr@{}}
+\toprule
+Outcome & Prev. & Scalar & $R$-only RF & Full RF \\
+\midrule
+Target-any & .111 & .708/.324 & .793/\textbf{.367} & \textbf{.815}/.357 \\
+Clean-any & .105 & .651/.266 & .789/\textbf{.342} & \textbf{.810}/.330 \\
+Neighbor dmg. & .079 & .840/\textbf{.408} & .842/.402 & \textbf{.858}/.396 \\
+Capability dmg. & .078 & .849/.373 & .842/.373 & \textbf{.856/.382} \\
+\bottomrule
+\end{tabular*}
+
+\end{table}

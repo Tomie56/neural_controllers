@@ -1,0 +1,777 @@
+{
+  "geva-etal-2021-transformer": {
+    "source_key": "geva-etal-2021-transformer",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {}
+  },
+  "dai-etal-2022-knowledge": {
+    "source_key": "dai-etal-2022-knowledge",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {}
+  },
+  "de-cao-etal-2021-editing": {
+    "source_key": "de-cao-etal-2021-editing",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {}
+  },
+  "NEURIPS2022_6f1d43d5": {
+    "source_key": "NEURIPS2022_6f1d43d5",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "title": {
+        "before": "Locating and Editing Factual Associations in {GPT}",
+        "after": "Locating and Editing Factual Associations in GPT"
+      },
+      "doi": {
+        "before": null,
+        "after": "10.52202/068431-1262"
+      },
+      "url": {
+        "before": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/6f1d43d5a82a37e89b0665b33bf3a182-Abstract-Conference.html",
+        "after": "https://proceedings.neurips.cc/paper_files/paper/2022/file/6f1d43d5a82a37e89b0665b33bf3a182-Paper-Conference.pdf"
+      }
+    }
+  },
+  "mitchell2022fast": {
+    "source_key": "mitchell2022fast",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "OpenReview API returned HTTP 403; its guessed /bibtex route returned 404. Google Scholar returned HTTP 429. Downloaded the ICLR BibTeX supplied by the authors in their official MEND repository. Conference corroboration: https://iclr.cc/virtual/2022/poster/6846 . This is an author export, not a conference/Scholar download.",
+    "changed_fields": {
+      "author": {
+        "before": "Mitchell, Eric and Lin, Charles and Bosselut, Antoine and Finn, Chelsea and Manning, Christopher D.",
+        "after": "Eric Mitchell and Charles Lin and Antoine Bosselut and Chelsea Finn and Christopher D Manning"
+      },
+      "url": {
+        "before": "https://openreview.net/forum?id=0DcZxeWfOPt",
+        "after": "https://openreview.net/pdf?id=0DcZxeWfOPt"
+      }
+    }
+  },
+  "mitchell22a": {
+    "source_key": "pmlr-v162-mitchell22a",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "author": {
+        "before": "Mitchell, Eric and Lin, Charles and Bosselut, Antoine and Manning, Christopher D. and Finn, Chelsea",
+        "after": "Mitchell, Eric and Lin, Charles and Bosselut, Antoine and Manning, Christopher D and Finn, Chelsea"
+      }
+    }
+  },
+  "meng2023mass": {
+    "source_key": "meng2023memit",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields.",
+      "The author export labels ICLR as a journal. Normalize to inproceedings/booktitle and use the hyphenated title and paper link confirmed on the official ICLR 2023 program page."
+    ],
+    "exception": "OpenReview API returned HTTP 403; its guessed /bibtex route returned 404. Downloaded the authors' own BibTeX from the MEMIT project. Conference corroboration: https://iclr.cc/virtual/2023/poster/11880 . This is an author export, not a conference/Scholar download.",
+    "changed_fields": {
+      "author": {
+        "before": "Meng, Kevin and Sharma, Arnab Sen and Andonian, Alex and Belinkov, Yonatan and Bau, David",
+        "after": "Kevin Meng and Sen Sharma, Arnab and Alex Andonian and Yonatan Belinkov and David Bau"
+      },
+      "booktitle": {
+        "before": "The Eleventh International Conference on Learning Representations",
+        "after": "The Eleventh International Conference on Learning Representations (ICLR)"
+      }
+    }
+  },
+  "NEURIPS2023_3927bbdc": {
+    "source_key": "NEURIPS2023_3927bbdc",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "doi": {
+        "before": null,
+        "after": "10.52202/075280-0774"
+      },
+      "url": {
+        "before": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/3927bbdcf0e8d1fa8aa23c26f358a281-Abstract-Conference.html",
+        "after": "https://proceedings.neurips.cc/paper_files/paper/2023/file/3927bbdcf0e8d1fa8aa23c26f358a281-Paper-Conference.pdf"
+      }
+    }
+  },
+  "lee-etal-2025-localization": {
+    "source_key": "lee-etal-2025-localization",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {}
+  },
+  "turner2023steering": {
+    "source_key": "turner2024steeringlanguagemodelsactivation",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields.",
+      "Identify the arXiv source explicitly using its exported eprint identifier; follow the year in the downloaded current-version export."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "author": {
+        "before": "Turner, Alexander Matt and Thiergart, Lisa and Leech, Gavin and Udell, David and Vazquez, Juan J. and Mini, Ulisse and MacDiarmid, Monte",
+        "after": "Alexander Matt Turner and Lisa Thiergart and Gavin Leech and David Udell and Juan J. Vazquez and Ulisse Mini and Monte MacDiarmid"
+      },
+      "year": {
+        "before": "2023",
+        "after": "2024"
+      },
+      "doi": {
+        "before": "10.48550/arXiv.2308.10248",
+        "after": null
+      }
+    }
+  },
+  "rimsky-etal-2024-steering": {
+    "source_key": "rimsky-etal-2024-steering",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {}
+  },
+  "NEURIPS2023_81b83900": {
+    "source_key": "NEURIPS2023_81b83900",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "doi": {
+        "before": null,
+        "after": "10.52202/075280-1797"
+      },
+      "url": {
+        "before": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/81b8390039b7302c909cb769f8b6cd93-Abstract-Conference.html",
+        "after": "https://proceedings.neurips.cc/paper_files/paper/2023/file/81b8390039b7302c909cb769f8b6cd93-Paper-Conference.pdf"
+      }
+    }
+  },
+  "stoehr-etal-2024-activation": {
+    "source_key": "stoehr-etal-2024-activation",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {}
+  },
+  "zou2023representation": {
+    "source_key": "zou2025representationengineeringtopdownapproach",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields.",
+      "Identify the arXiv source explicitly using its exported eprint identifier; follow the year in the downloaded current-version export."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "author": {
+        "before": "Zou, Andy and Phan, Long and Chen, Sarah and Campbell, James and Guo, Phillip and Ren, Richard and Pan, Alexander and Yin, Xuwang and Mazeika, Mantas and Dombrowski, Ann-Kathrin and Goel, Shashwat and Li, Nathaniel and Byun, Michael J. and Wang, Zifan and Mallen, Alex and Basart, Steven and Koyejo, Sanmi and Song, Dawn and Fredrikson, Matt and Kolter, J. Zico and Hendrycks, Dan",
+        "after": "Andy Zou and Long Phan and Sarah Chen and James Campbell and Phillip Guo and Richard Ren and Alexander Pan and Xuwang Yin and Mantas Mazeika and Ann-Kathrin Dombrowski and Shashwat Goel and Nathaniel Li and Michael J. Byun and Zifan Wang and Alex Mallen and Steven Basart and Sanmi Koyejo and Dawn Song and Matt Fredrikson and J. Zico Kolter and Dan Hendrycks"
+      },
+      "year": {
+        "before": "2023",
+        "after": "2025"
+      },
+      "doi": {
+        "before": "10.48550/arXiv.2310.01405",
+        "after": null
+      }
+    }
+  },
+  "radhakrishnan2022mechanism": {
+    "source_key": "Radhakrishnan_2024",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "Use the final Science 2024 article and its publisher-deposited Crossref BibTeX. The former arXiv 2022 entry referred to an earlier title/version. Citation key is retained for compatibility.",
+    "changed_fields": {
+      "title": {
+        "before": "Mechanism of Feature Learning in Deep Fully Connected Networks and Kernel Machines That Recursively Learn Features",
+        "after": "Mechanism for feature learning in neural networks and backpropagation-free machine learning models"
+      },
+      "journal": {
+        "before": null,
+        "after": "Science"
+      },
+      "volume": {
+        "before": null,
+        "after": "383"
+      },
+      "number": {
+        "before": null,
+        "after": "6690"
+      },
+      "pages": {
+        "before": null,
+        "after": "1461–1467"
+      },
+      "year": {
+        "before": "2022",
+        "after": "2024"
+      },
+      "publisher": {
+        "before": null,
+        "after": "American Association for the Advancement of Science (AAAS)"
+      },
+      "howpublished": {
+        "before": "arXiv preprint arXiv:2212.13881",
+        "after": null
+      },
+      "eprint": {
+        "before": "2212.13881",
+        "after": null
+      },
+      "archiveprefix": {
+        "before": "arXiv",
+        "after": null
+      },
+      "primaryclass": {
+        "before": "cs.LG",
+        "after": null
+      },
+      "doi": {
+        "before": "10.48550/arXiv.2212.13881",
+        "after": "10.1126/science.adi5639"
+      },
+      "url": {
+        "before": "https://arxiv.org/abs/2212.13881",
+        "after": "http://dx.doi.org/10.1126/science.adi5639"
+      }
+    }
+  },
+  "wu25a": {
+    "source_key": "pmlr-v267-wu25a",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "title": {
+        "before": "{AxBench}: Steering {LLMs}? Even Simple Baselines Outperform Sparse Autoencoders",
+        "after": "{A}x{B}ench: Steering {LLM}s? {E}ven Simple Baselines Outperform Sparse Autoencoders"
+      },
+      "author": {
+        "before": "Wu, Zhengxuan and Arora, Aryaman and Geiger, Atticus and Wang, Zheng and Huang, Jing and Jurafsky, Dan and Manning, Christopher D. and Potts, Christopher",
+        "after": "Wu, Zhengxuan and Arora, Aryaman and Geiger, Atticus and Wang, Zheng and Huang, Jing and Jurafsky, Dan and Manning, Christopher D and Potts, Christopher"
+      }
+    }
+  },
+  "silva-etal-2025-steering": {
+    "source_key": "silva-etal-2025-steering",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {}
+  },
+  "goyal-iii-2026-steering": {
+    "source_key": "goyal-iii-2026-steering",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "booktitle": {
+        "before": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "after": "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)"
+      }
+    }
+  },
+  "pmlr-v235-singh24d": {
+    "source_key": "pmlr-v235-singh24d",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {}
+  },
+  "tan2024steering": {
+    "source_key": "NEURIPS2024_fb3ad59a",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "author": {
+        "before": "Tan, Daniel and Chanin, David and Lynch, Aengus and Paige, Brooks and Kanoulas, Dimitrios and Garriga-Alonso, Adri\\`a and Kirk, Robert",
+        "after": "Tan, Daniel and Chanin, David and Lynch, Aengus and Paige, Brooks and Kanoulas, Dimitrios and Garriga-Alonso, Adri\\`{a} and Kirk, Robert"
+      },
+      "url": {
+        "before": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/fb3ad59a84799bfb8d700e56d19c231b-Abstract-Conference.html",
+        "after": "https://proceedings.neurips.cc/paper_files/paper/2024/file/fb3ad59a84799bfb8d700e56d19c231b-Paper-Conference.pdf"
+      }
+    }
+  },
+  "pres2024reliable": {
+    "source_key": "pres2024reliableevaluationbehaviorsteering",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields.",
+      "Identify the arXiv source explicitly using its exported eprint identifier; follow the year in the downloaded current-version export."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "title": {
+        "before": "Towards Reliable Evaluation of Behavior Steering Interventions in {LLMs}",
+        "after": "Towards Reliable Evaluation of Behavior Steering Interventions in LLMs"
+      },
+      "author": {
+        "before": "Pres, Itamar and Ruis, Laura and Lubana, Ekdeep Singh and Krueger, David",
+        "after": "Itamar Pres and Laura Ruis and Ekdeep Singh Lubana and David Krueger"
+      },
+      "doi": {
+        "before": "10.48550/arXiv.2410.17245",
+        "after": null
+      }
+    }
+  },
+  "xu-etal-2026-controllable": {
+    "source_key": "xu-etal-2026-controllable",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "booktitle": {
+        "before": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "after": "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)"
+      }
+    }
+  },
+  "xu-etal-2026-steering": {
+    "source_key": "xu-etal-2026-steering",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "author": {
+        "before": "Xu, Ziwen and Wu, Chenyan and Sun, Hengyu and Hong, Haiwen and Wang, Mengru and Yao, Yunzhi and Huang, Longtao and Xue, Hui and Deng, Shumin and Chu, Zhixuan and Chen, Huajun and Zhang, Ningyu",
+        "after": "Xu, Ziwen and WU, Chenyan and Sun, Hengyu and Hong, Haiwen and Wang, Mengru and Yao, Yunzhi and Huang, Longtao and Xue, Hui and Deng, Shumin and Chu, Zhixuan and Chen, Huajun and Zhang, Ningyu"
+      },
+      "booktitle": {
+        "before": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "after": "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)"
+      }
+    }
+  },
+  "fan2026steerable": {
+    "source_key": "fan2026llmsteerable",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields.",
+      "Identify the arXiv source explicitly using its exported eprint identifier; follow the year in the downloaded current-version export."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "title": {
+        "before": "When is Your {LLM} Steerable?",
+        "after": "When is Your LLM Steerable?"
+      },
+      "author": {
+        "before": "Fan, Chenrui and Cheng, Yize and Li, Ming and Feizi, Soheil and Zhou, Tianyi",
+        "after": "Chenrui Fan and Yize Cheng and Ming Li and Soheil Feizi and Tianyi Zhou"
+      },
+      "doi": {
+        "before": "10.48550/arXiv.2606.11599",
+        "after": null
+      }
+    }
+  },
+  "yao-etal-2023-editing": {
+    "source_key": "yao-etal-2023-editing",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {}
+  },
+  "wang-etal-2024-easyedit": {
+    "source_key": "wang-etal-2024-easyedit",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "title": {
+        "before": "EasyEdit: An Easy-to-use Knowledge Editing Framework for Large Language Models",
+        "after": "{E}asy{E}dit: An Easy-to-use Knowledge Editing Framework for Large Language Models"
+      }
+    }
+  },
+  "wang2024mmlupro": {
+    "source_key": "NEURIPS2024_ad236edc",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "title": {
+        "before": "{MMLU-Pro}: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+        "after": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark"
+      },
+      "booktitle": {
+        "before": null,
+        "after": "Advances in Neural Information Processing Systems"
+      },
+      "volume": {
+        "before": null,
+        "after": "37"
+      },
+      "pages": {
+        "before": null,
+        "after": "95266--95290"
+      },
+      "publisher": {
+        "before": null,
+        "after": "Curran Associates, Inc."
+      },
+      "howpublished": {
+        "before": "arXiv preprint arXiv:2406.01574",
+        "after": null
+      },
+      "eprint": {
+        "before": "2406.01574",
+        "after": null
+      },
+      "archiveprefix": {
+        "before": "arXiv",
+        "after": null
+      },
+      "primaryclass": {
+        "before": "cs.CL",
+        "after": null
+      },
+      "doi": {
+        "before": "10.48550/arXiv.2406.01574",
+        "after": "10.52202/079017-3018"
+      },
+      "url": {
+        "before": null,
+        "after": "https://proceedings.neurips.cc/paper_files/paper/2024/file/ad236edc564f3e3156e1b2feafb99a24-Paper-Datasets_and_Benchmarks_Track.pdf"
+      }
+    }
+  },
+  "gema2024mmluredux": {
+    "source_key": "gema-etal-2025-done",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "author": {
+        "before": "Gema, Aryo Pradipta and Leang, Joshua Ong Jun and Hong, Giwon and Devoto, Alessio and Mancino, Alberto Carlo Maria and Saxena, Rohit and He, Xuanli and Zhao, Yu and Du, Xiaotang and Madani, Mohammad Reza Ghasemi and Barale, Claire and McHardy, Robert and Harris, Joshua and Kaddour, Jean and van Krieken, Emile and Minervini, Pasquale",
+        "after": "Gema, Aryo Pradipta and Leang, Joshua Ong Jun and Hong, Giwon and Devoto, Alessio and Mancino, Alberto Carlo Maria and Saxena, Rohit and He, Xuanli and Zhao, Yu and Du, Xiaotang and Ghasemi Madani, Mohammad Reza and Barale, Claire and McHardy, Robert and Harris, Joshua and Kaddour, Jean and Van Krieken, Emile and Minervini, Pasquale"
+      },
+      "booktitle": {
+        "before": null,
+        "after": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)"
+      },
+      "pages": {
+        "before": null,
+        "after": "5069--5096"
+      },
+      "year": {
+        "before": "2024",
+        "after": "2025"
+      },
+      "publisher": {
+        "before": null,
+        "after": "Association for Computational Linguistics"
+      },
+      "howpublished": {
+        "before": "arXiv preprint arXiv:2406.04127",
+        "after": null
+      },
+      "eprint": {
+        "before": "2406.04127",
+        "after": null
+      },
+      "archiveprefix": {
+        "before": "arXiv",
+        "after": null
+      },
+      "primaryclass": {
+        "before": "cs.CL",
+        "after": null
+      },
+      "doi": {
+        "before": "10.48550/arXiv.2406.04127",
+        "after": "10.18653/v1/2025.naacl-long.262"
+      },
+      "url": {
+        "before": null,
+        "after": "https://aclanthology.org/2025.naacl-long.262/"
+      }
+    }
+  },
+  "clark2018arc": {
+    "source_key": "clark2018thinksolvedquestionanswering",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields.",
+      "Identify the arXiv source explicitly using its exported eprint identifier; follow the year in the downloaded current-version export."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "title": {
+        "before": "Think You Have Solved Question Answering? Try {ARC}, the {AI2} Reasoning Challenge",
+        "after": "Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge"
+      },
+      "author": {
+        "before": "Clark, Peter and Cowhey, Isaac and Etzioni, Oren and Khot, Tushar and Sabharwal, Ashish and Schoenick, Carissa and Tafjord, Oyvind",
+        "after": "Peter Clark and Isaac Cowhey and Oren Etzioni and Tushar Khot and Ashish Sabharwal and Carissa Schoenick and Oyvind Tafjord"
+      },
+      "doi": {
+        "before": "10.48550/arXiv.1803.05457",
+        "after": null
+      },
+      "url": {
+        "before": null,
+        "after": "https://arxiv.org/abs/1803.05457"
+      }
+    }
+  },
+  "mihaylov-etal-2018-suit": {
+    "source_key": "mihaylov-etal-2018-suit",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "url": {
+        "before": null,
+        "after": "https://aclanthology.org/D18-1260/"
+      }
+    }
+  },
+  "welbl-etal-2017-crowdsourcing": {
+    "source_key": "welbl-etal-2017-crowdsourcing",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "url": {
+        "before": null,
+        "after": "https://aclanthology.org/W17-4413/"
+      }
+    }
+  },
+  "white2025livebench": {
+    "source_key": "ICLR2025_e4a46394",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "The official ICLR BibTeX contains all 18 authors, including Shubh-Agrawal; it uses Sandeep Sandha, whereas the paper PDF spells out Sandeep Singh Sandha. Follow the exported name in the manuscript and retain this discrepancy explicitly.",
+    "changed_fields": {
+      "title": {
+        "before": "{LiveBench}: A Challenging, Contamination-Limited {LLM} Benchmark",
+        "after": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+      },
+      "author": {
+        "before": "White, Colin and Dooley, Samuel and Roberts, Manley and Pal, Arka and Feuer, Benjamin and Jain, Siddhartha and Shwartz-Ziv, Ravid and Jain, Neel and Saifullah, Khalid and Dey, Sreemanti and {Shubh-Agrawal} and Sandha, Sandeep Singh and Naidu, Siddartha and Hegde, Chinmay and LeCun, Yann and Goldstein, Tom and Neiswanger, Willie and Goldblum, Micah",
+        "after": "White, Colin and Dooley, Samuel and Roberts, Manley and Pal, Arka and Feuer, Benjamin and Jain, Siddhartha and Shwartz-Ziv, Ravid and Jain, Neel and Saifullah, Khalid and Dey, Sreemanti and Shubh-Agrawal and Sandha, Sandeep and Naidu, Siddartha and Hegde, Chinmay and LeCun, Yann and Goldstein, Tom and Neiswanger, Willie and Goldblum, Micah"
+      },
+      "booktitle": {
+        "before": "The Thirteenth International Conference on Learning Representations",
+        "after": "International Conference on Learning Representations"
+      },
+      "volume": {
+        "before": null,
+        "after": "2025"
+      },
+      "pages": {
+        "before": null,
+        "after": "91595--91631"
+      },
+      "url": {
+        "before": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/e4a46394ba5378b3f9a186a5b4c650d1-Abstract-Conference.html",
+        "after": "https://proceedings.iclr.cc/paper_files/paper/2025/file/e4a46394ba5378b3f9a186a5b4c650d1-Paper-Conference.pdf"
+      }
+    }
+  },
+  "zellers-etal-2019-hellaswag": {
+    "source_key": "zellers-etal-2019-hellaswag",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "title": {
+        "before": "{HellaSwag}: Can a Machine Really Finish Your Sentence?",
+        "after": "{H}ella{S}wag: Can a Machine Really Finish Your Sentence?"
+      },
+      "url": {
+        "before": null,
+        "after": "https://aclanthology.org/P19-1472/"
+      }
+    }
+  },
+  "khot2020qasc": {
+    "source_key": "Khot_2020",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields."
+    ],
+    "exception": "AAAI OJS download was inaccessible through the shell proxy. Downloaded publisher-deposited DOI metadata as BibTeX via Crossref. Conference record: https://ojs.aaai.org/index.php/AAAI/article/view/6319 . This is a Crossref export, not an OJS download.",
+    "changed_fields": {
+      "title": {
+        "before": "{QASC}: A Dataset for Question Answering via Sentence Composition",
+        "after": "QASC: A Dataset for Question Answering via Sentence Composition"
+      },
+      "booktitle": {
+        "before": "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "after": null
+      },
+      "journal": {
+        "before": null,
+        "after": "Proceedings of the AAAI Conference on Artificial Intelligence"
+      },
+      "number": {
+        "before": null,
+        "after": "05"
+      },
+      "pages": {
+        "before": "8082--8090",
+        "after": "8082–8090"
+      },
+      "publisher": {
+        "before": null,
+        "after": "Association for the Advancement of Artificial Intelligence (AAAI)"
+      },
+      "url": {
+        "before": null,
+        "after": "http://dx.doi.org/10.1609/aaai.v34i05.6319"
+      }
+    }
+  },
+  "yang2025qwen3": {
+    "source_key": "yang2025qwen3technicalreport",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields.",
+      "Render the first 10 of 60 exported author entries plus et al.; the raw file preserves every exported name.",
+      "Identify the arXiv source explicitly using its exported eprint identifier; follow the year in the downloaded current-version export."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "title": {
+        "before": "{Qwen3 Technical Report}",
+        "after": "Qwen3 Technical Report"
+      },
+      "author": {
+        "before": "Yang, An and Li, Anfeng and Yang, Baosong and Zhang, Beichen and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Gao, Chang and Huang, Chengen and Lv, Chenxu and others",
+        "after": "An Yang and Anfeng Li and Baosong Yang and Beichen Zhang and Binyuan Hui and Bo Zheng and Bowen Yu and Chang Gao and Chengen Huang and Chenxu Lv and others"
+      },
+      "journal": {
+        "before": "arXiv preprint arXiv:2505.09388",
+        "after": null
+      },
+      "howpublished": {
+        "before": null,
+        "after": "arXiv preprint arXiv:2505.09388"
+      },
+      "eprint": {
+        "before": null,
+        "after": "2505.09388"
+      },
+      "archiveprefix": {
+        "before": null,
+        "after": "arXiv"
+      },
+      "primaryclass": {
+        "before": null,
+        "after": "cs.CL"
+      },
+      "doi": {
+        "before": "10.48550/arXiv.2505.09388",
+        "after": null
+      },
+      "url": {
+        "before": null,
+        "after": "https://arxiv.org/abs/2505.09388"
+      }
+    }
+  },
+  "qwen2026qwen35": {
+    "source_key": "qwen3.5",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields.",
+      "Add source-type description; title, author, year and URL follow the official model-card citation."
+    ],
+    "exception": "This is a model release, not a conference paper. Downloaded the exact citation supplied in the official Qwen3.5-2B-Base model card; it cites the Qwen3.5 release blog.",
+    "changed_fields": {
+      "title": {
+        "before": "{Qwen3.5-2B-Base}",
+        "after": "{Qwen3.5}: Towards Native Multimodal Agents"
+      },
+      "howpublished": {
+        "before": "Hugging Face model card",
+        "after": "Qwen Team model release"
+      },
+      "url": {
+        "before": "https://huggingface.co/Qwen/Qwen3.5-2B-Base",
+        "after": "https://qwen.ai/blog?id=qwen3.5"
+      }
+    }
+  },
+  "liu2026ministral3": {
+    "source_key": "liu2026ministral3",
+    "notes": [
+      "Retain the manuscript citation key; normalize whitespace, Unicode accents and page dashes; protect title capitalization; omit optional abstract/editor/month/address/ISBN fields.",
+      "Render the first 10 of 120 exported author entries plus et al.; the raw file preserves every exported name.",
+      "Identify the arXiv source explicitly using its exported eprint identifier; follow the year in the downloaded current-version export."
+    ],
+    "exception": "",
+    "changed_fields": {
+      "title": {
+        "before": "{Ministral 3}",
+        "after": "Ministral 3"
+      },
+      "author": {
+        "before": "Liu, Alexander H. and Khandelwal, Kartik and Subramanian, Sandeep and Jouault, Victor and Rastogi, Abhinav and Sad{\\'e}, Adrien and Jeffares, Alan and Jiang, Albert and Cahill, Alexandre and Gavaudan, Alexandre and others",
+        "after": "Alexander H. Liu and Kartik Khandelwal and Sandeep Subramanian and Victor Jouault and Abhinav Rastogi and Adrien Sadé and Alan Jeffares and Albert Jiang and Alexandre Cahill and Alexandre Gavaudan and others"
+      },
+      "journal": {
+        "before": "arXiv preprint arXiv:2601.08584",
+        "after": null
+      },
+      "howpublished": {
+        "before": null,
+        "after": "arXiv preprint arXiv:2601.08584"
+      },
+      "eprint": {
+        "before": null,
+        "after": "2601.08584"
+      },
+      "archiveprefix": {
+        "before": null,
+        "after": "arXiv"
+      },
+      "primaryclass": {
+        "before": null,
+        "after": "cs.CL"
+      },
+      "doi": {
+        "before": "10.48550/arXiv.2601.08584",
+        "after": null
+      },
+      "url": {
+        "before": null,
+        "after": "https://arxiv.org/abs/2601.08584"
+      }
+    }
+  }
+}

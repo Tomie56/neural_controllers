@@ -1,0 +1,41 @@
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{1.0pt}
+\caption{Record-held-out CPU prediction controls on Qwen3-1.7B-Base. In
+panel (a), each cell is AUROC/AP on all 3,000 records. Scalar is the
+training-free signed weak-response score; $R$-only and Full are random forests,
+where Full uses $B+M+L+R$. Panel (b) reports prevalence, AUROC, and AP with
+95\% intervals after excluding the 500-record layer-selection subset.}
+\label{tab:cpu-prediction-controls}
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrrrr@{}}
+\toprule
+\multicolumn{5}{c}{(a) Scalar and multivariate weak-response controls} \\
+\cmidrule(lr){1-5}
+Outcome & Prev. & Scalar & $R$-only & Full \\
+\midrule
+Supp. & .058 & .793/.296 & .843/.338 & .865/.327 \\
+Enh. & .056 & .771/.282 & .833/.320 & .852/.312 \\
+Target-any & .111 & .708/.324 & .793/.367 & .815/.357 \\
+Neighbor dmg. & .079 & .840/.408 & .842/.402 & .858/.396 \\
+Capability dmg. & .078 & .849/.373 & .842/.373 & .856/.382 \\
+Clean supp. & .054 & .729/.227 & .841/.308 & .863/.299 \\
+Clean enh. & .053 & .735/.239 & .832/.305 & .851/.292 \\
+Clean-any & .105 & .651/.266 & .789/.342 & .810/.330 \\
+\bottomrule
+\end{tabular*}
+
+\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}lrrr@{}}
+\toprule
+\multicolumn{4}{c}{(b) Complete random forest after subset exclusion} \\
+\cmidrule(lr){1-4}
+Outcome & Prev. & AUROC [95\% CI] & AP [95\% CI] \\
+\midrule
+Target-any & .101 & .824 [.810,.838] & .355 [.298,.412] \\
+Clean-any & .095 & .819 [.806,.831] & .328 [.278,.377] \\
+Neighbor dmg. & .075 & .858 [.848,.868] & .392 [.369,.414] \\
+Capability dmg. & .078 & .852 [.850,.856] & .373 [.338,.400] \\
+\bottomrule
+\end{tabular*}
+
+\end{table}

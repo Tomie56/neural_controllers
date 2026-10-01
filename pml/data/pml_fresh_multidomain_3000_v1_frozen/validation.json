@@ -1,0 +1,226 @@
+{
+  "schema": "pml_bidirectional_v1_frozen_rebalanced_capability",
+  "n_records": 3000,
+  "n_eval_bank": 20834,
+  "n_assignments": 3000,
+  "eval_type_counts": {
+    "capability": 2834,
+    "neighbor": 9000,
+    "target": 9000
+  },
+  "dataset_counts": {
+    "TIGER-Lab/MMLU-Pro": 1029,
+    "edinburgh-dawg/mmlu-redux-2.0": 571,
+    "livebench/math": 150,
+    "livebench/reasoning": 200,
+    "Rowan/hellaswag": 150,
+    "allenai/ai2_arc": 350,
+    "allenai/openbookqa": 200,
+    "allenai/qasc": 150,
+    "allenai/sciq": 200
+  },
+  "domain_counts": {
+    "recent_multidomain_academic": 1029,
+    "recent_corrected_chemistry": 95,
+    "recent_corrected_computer_security": 98,
+    "recent_corrected_global_facts": 94,
+    "recent_corrected_biology": 95,
+    "recent_corrected_physics": 94,
+    "recent_corrected_machine_learning": 95,
+    "recent_objective_math": 150,
+    "recent_objective_reasoning": 200,
+    "situated_commonsense": 150,
+    "science_exam": 350,
+    "elementary_science": 200,
+    "science_composition": 150,
+    "science_qa": 200
+  },
+  "freshness_group_counts": {
+    "recent_2024_2026": 1950,
+    "classic_pre_2024": 1050
+  },
+  "release_year_counts": {
+    "2024": 1950,
+    "2019": 300,
+    "2018": 550,
+    "2017": 200
+  },
+  "n_duplicate_record_ids": 0,
+  "n_duplicate_eval_ids": 0,
+  "n_missing_refs": 0,
+  "missing_refs_examples": [],
+  "assignment_len_counts": {
+    "target_eval_ids": {
+      "3": 3000
+    },
+    "neighbor_eval_ids": {
+      "3": 3000
+    },
+    "capability_eval_ids": {
+      "4": 3000
+    }
+  },
+  "target_eval_usage": {
+    "n_used": 9000,
+    "min": 1,
+    "max": 1
+  },
+  "neighbor_eval_usage": {
+    "n_used": 9000,
+    "min": 1,
+    "max": 1
+  },
+  "capability_eval_usage": {
+    "n_pool": 2834,
+    "n_used": 2834,
+    "n_unused": 0,
+    "total_assignments": 12000,
+    "mean": 4.234297812279464,
+    "min": 4,
+    "max": 5,
+    "top20": [
+      {
+        "eval_id": "capability::f8b28a2b5900959d",
+        "count": 5,
+        "prompt": "The process by which a solid changes directly into a gas is called",
+        "correct": " sublimation",
+        "contrast": " evaporation"
+      },
+      {
+        "eval_id": "capability::7488443d4f092099",
+        "count": 5,
+        "prompt": "Water boils at 100 degrees Celsius at standard atmospheric pressure. Water freezes at 0 degrees",
+        "correct": " Celsius",
+        "contrast": " Fahrenheit"
+      },
+      {
+        "eval_id": "capability::546b370fe8a7865d",
+        "count": 5,
+        "prompt": "Inertia is the tendency of an object to resist changes in its",
+        "correct": " motion",
+        "contrast": " temperature"
+      },
+      {
+        "eval_id": "capability::98493cf8db09d8a2",
+        "count": 5,
+        "prompt": "The force that pulls objects toward the center of the Earth is called",
+        "correct": " gravity",
+        "contrast": " magnetism"
+      },
+      {
+        "eval_id": "capability::783f4bad3e32a942",
+        "count": 5,
+        "prompt": "Birds can typically",
+        "correct": " fly",
+        "contrast": " swim underwater"
+      },
+      {
+        "eval_id": "capability::1e85667000d60291",
+        "count": 5,
+        "prompt": "A common method to separate salt from water is",
+        "correct": " evaporation",
+        "contrast": " filtration"
+      },
+      {
+        "eval_id": "capability::57cc6c35510ea915",
+        "count": 5,
+        "prompt": "In computer networking, an IP address is used to",
+        "correct": " uniquely identify a device on a network",
+        "contrast": " encrypt data transmitted between devices"
+      },
+      {
+        "eval_id": "capability::48b0f1c981fa26d6",
+        "count": 5,
+        "prompt": "What do people use to drink soup?",
+        "correct": " a spoon",
+        "contrast": " a fork"
+      },
+      {
+        "eval_id": "capability::53ee229060a65ee4",
+        "count": 5,
+        "prompt": "The Earth's atmosphere is composed mostly of",
+        "correct": " nitrogen",
+        "contrast": " oxygen"
+      },
+      {
+        "eval_id": "capability::f70628dc3448f9e5",
+        "count": 5,
+        "prompt": "What is the boiling point of water at sea level in degrees Celsius?",
+        "correct": " 100",
+        "contrast": " 0"
+      },
+      {
+        "eval_id": "capability::4abb2543fa841aa5",
+        "count": 5,
+        "prompt": "Planet Earth orbits the",
+        "correct": " Sun.",
+        "contrast": " Moon."
+      },
+      {
+        "eval_id": "capability::fc42ffbb69c84761",
+        "count": 5,
+        "prompt": "Water boils at",
+        "correct": " a temperature of 100°C",
+        "contrast": " a temperature of 50°C"
+      },
+      {
+        "eval_id": "capability::1732248142384beb",
+        "count": 5,
+        "prompt": "An object at rest tends to stay at rest unless acted on by a",
+        "correct": " net external force",
+        "contrast": " internal force"
+      },
+      {
+        "eval_id": "capability::4e3ce77c693d1626",
+        "count": 5,
+        "prompt": "The largest ocean on Earth is the",
+        "correct": " Pacific Ocean.",
+        "contrast": " Atlantic Ocean."
+      },
+      {
+        "eval_id": "capability::2ac796f4c304dda1",
+        "count": 5,
+        "prompt": "Humans require oxygen for",
+        "correct": " respiration",
+        "contrast": " digestion"
+      },
+      {
+        "eval_id": "capability::ff80e25d6411690d",
+        "count": 5,
+        "prompt": "At what temperature does water boil in Celsius?",
+        "correct": " 100",
+        "contrast": " 0"
+      },
+      {
+        "eval_id": "capability::006b6bd570629a32",
+        "count": 5,
+        "prompt": "Earth's natural satellite is called",
+        "correct": " the Moon",
+        "contrast": " the Sun"
+      },
+      {
+        "eval_id": "capability::b84ceac6a9279f8a",
+        "count": 5,
+        "prompt": "Photosynthesis in plants produces",
+        "correct": " oxygen",
+        "contrast": " carbon dioxide"
+      },
+      {
+        "eval_id": "capability::3e1e764834d7c140",
+        "count": 5,
+        "prompt": "In a binary mixture, Fick's law relates flux to",
+        "correct": " concentration gradient",
+        "contrast": " temperature gradient"
+      },
+      {
+        "eval_id": "capability::0f46c11464521ebe",
+        "count": 5,
+        "prompt": "What is the largest planet in our solar system?",
+        "correct": " Jupiter.",
+        "contrast": " Saturn."
+      }
+    ],
+    "unused_examples": []
+  },
+  "is_freeze_ready": true
+}

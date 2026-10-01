@@ -1,0 +1,301 @@
+\section{Frozen Benchmark Construction}
+
+The frozen benchmark is constructed from nine public multiple-choice and
+reasoning sources (Table~\ref{tab:dataset-composition}). Records retain their
+source dataset, domain, release year, and freshness group. The final collection
+contains 1,950 records from 2024 sources and 1,050 records from pre-2024
+sources. Fourteen domains range from situated commonsense and elementary
+science to recent corrected facts, academic questions, mathematics, and
+reasoning.
+
+The source benchmarks are MMLU-Pro and MMLU-Redux 2.0
+\citep{wang2024mmlupro,gema2024mmluredux}, AI2 ARC, OpenBookQA, and SciQ
+\citep{clark2018arc,mihaylov-etal-2018-suit,welbl-etal-2017-crowdsourcing},
+LiveBench \citep{white2025livebench}, HellaSwag
+\citep{zellers-etal-2019-hellaswag}, and QASC \citep{khot2020qasc}.
+
+\input{tables/appendix_dataset_composition}
+
+Each record contains a direction-fitting set and an evaluation assignment. The
+direction-fitting statements never contain the target, neighbor, or capability
+evaluation fields. Evaluation uses three target probes, three semantic-neighbor
+probes, and four capability probes per record. Capability assignments are
+round-robin balanced over 2,834 unique probes; every capability probe is used
+four or five times. This prevents a small set of easy generic questions from
+dominating the capability-damage estimate.
+
+\subsection{Independent Expert Semantic Audit}
+
+Multiple human experts independently reviewed a dataset-stratified sample of
+108 complete records, 12 from each source. They checked the desired and contrast
+answers, direction-fitting statements, three target probes, three semantic
+neighbors, and four capability probes. Sixty-five records pass without issue,
+32 have a minor issue, and 11 fail
+at least one semantic criterion. This yields an 89.8\% acceptable rate on the
+audited sample. We additionally remove the known failed records and then all known
+non-pass records from the full CPU analyses. Table~\ref{tab:semantic-audit-sensitivity}
+shows that principal predictor AUROC changes by at most 0.004. At block 7, all
+learned Target and Clean gains over random retain positive paired 95\%
+intervals under both exclusions; for RFM/AGOP, the most conservative exclusion
+gives $+0.0369$ Target and $+0.0352$ Clean. Independently authored validation
+remains future work.
+
+\section{Confirmatory Experimental Details}
+
+We evaluate Qwen3-1.7B-Base~\cite{yang2025qwen3} at 0-indexed layers 7 and 11, selected from a dense
+pilot over layers 7, 11, 15, 19, 23, and 27. The main grid is
+$\{-0.5,-0.25,-0.1,0,0.1,0.25,0.5\}$. Five distinct direction families plus
+a matched-random audit entry, which is numerically identical to the random
+control, and two layers produce 30,000 distinct record--method--layer paths and
+36,000 logged rows. Seven coefficients and ten probes per record produce
+210,000 distinct and 252,000 logged path--strength rows, plus 2.52 million
+logged probe-level rows. Equivalently, the audit artifacts contain 360,000
+seven-point probe trajectories, of which 300,000 are distinct after removing
+the duplicate entry.
+GPU inference uses one NVIDIA GeForce RTX 5090 with bfloat16, batch size two,
+and seed 113.
+
+\paragraph{Direction construction and inference.}
+Each direction is fitted independently for one record and layer using 6--13
+positive and 6--13 contrast prompts. Prompts are tokenized without added
+special tokens and left padded; the direction-fitting activation is the final
+non-padding prompt token at the selected layer. Mean difference, ridge linear,
+and logistic use the same activation matrix and labels. Ridge regularization is
+$10^{-3}$, logistic regression runs for at most 1,000 iterations, and RFM uses
+three iterations with a Laplace kernel of bandwidth 10 and regularization
+$10^{-3}$. During evaluation, the unit direction is added to the selected
+block output at every token position. Correct and contrast continuations are
+teacher-forced separately, and path labels use their mean per-token log-probability
+margin to reduce continuation-length effects.
+
+Random-direction 95th percentiles define separate response thresholds:
+$\tau_T=0.1753$, $\tau_N=0.1567$, and $\tau_C=0.1248$. The confirmatory labels
+use only $|\alpha|\in\{0.25,0.5\}$. Weak-response features use only
+$|\alpha|=0.1$, so the observed probe strength is disjoint from all label
+strengths.
+
+Feature group $B$ contains unperturbed target, neighbor, and capability margins.
+Group $M$ contains method, layer, dataset, domain, freshness, and release year.
+Group $L$ contains separation, saliency, threshold-accuracy, and
+direction-agreement statistics, while $G$ contains RFM/AGOP spectrum and
+alignment statistics. Group $R$ contains signed target, neighbor, and
+capability responses at $\alpha=\pm0.1$.
+Prediction uses class-balanced logistic regression and random forests with five
+grouped folds by record, dataset, or domain. We report AUROC, average precision,
+balanced accuracy, F1, and Brier score in the released result artifacts; the
+tables below retain AUROC and AP, the two threshold-independent ranking metrics.
+
+\paragraph{Computational environment.}
+\input{sections/computational_environment_generated}
+
+\input{tables/appendix_semantic_audit_sensitivity}
+
+\section{Dimension-Corrected Cross-Model Protocol}
+
+The confirmation uses one seed-113 stratified subset of 500 frozen records for
+Qwen3-1.7B-Base, Qwen3.5-2B-Base~\cite{qwen2026qwen35}, and
+Ministral-3-3B-Base~\cite{liu2026ministral3}. A separate seed-127
+calibration set contains 100 records and has zero overlap with the formal
+subset. At each aligned layer, 1,941 direction-construction prompt states are
+used to estimate the median residual RMS. The calibration set is used only to
+fix model--layer scales, not to select records, methods, or outcomes.
+
+Directions have unit $\ell_2$ norm. We therefore match the intervention
+relative to the residual-state $\ell_2$ norm when hidden widths differ:
+$\|\alpha v\|_2/\|h\|_2$ with
+\begin{equation}
+    s_{m,\ell}=\frac{\operatorname{RMS}(h_{m,\ell})}
+    {\operatorname{RMS}(h_{\mathrm{ref},\ell})}
+    \sqrt{\frac{d_m}{d_{\mathrm{ref}}}},
+    \qquad \alpha_{m,\ell}=s_{m,\ell}\alpha_{\mathrm{ref}}.
+    \label{eq:supp-rms-matching}
+\end{equation}
+Qwen3-1.7B and
+Qwen3.5 have hidden width 2,048; Ministral has width 3,072 and therefore
+includes a $\sqrt{3{,}072/2{,}048}$ correction. The resulting layerwise scales
+are 1.000/1.000 for Qwen3-1.7B layers 7/11, 0.088/0.041 for Qwen3.5 layers
+6/9, and 0.091/0.052 for Ministral layers 6/10. The manifest stores the RMS
+ratio, hidden-width ratio, scale, record hash, and source-summary hashes.
+
+All models retain the same target, neighbor, and capability probes; reference
+coefficient grid; and confirmatory outcome definitions. At both aligned layers
+we evaluate random, mean difference, logistic, and RFM/AGOP, for 24
+model--layer--method configurations, 12,000 record-level paths, and 84,000
+path--strength evaluations. Linear remains in the complete 3,000-record primary
+study but is omitted here because logistic represents the same supervised
+discriminative direction family. Each model recalibrates target, neighbor, and
+capability thresholds from its own random directions on the frozen 500-record
+cohort. Qwen3-1.7B has scale one, so its 500-record outcomes are exact subsets
+of the completed primary run; only the cohort-level random thresholds are
+recomputed.
+
+The corresponding path-incidence outcomes are reported in the main paper. This
+section records the calibration and normalization choices needed to reproduce
+that comparison without duplicating the main result table.
+
+\section{Uncertainty and Worked Examples}
+
+For Table~\ref{tab:paired-bootstrap}, each learned row is paired with the random
+row for the same record and layer. We resample the 3,000 record identifiers with
+replacement 10,000 times and recompute the mean paired difference; all
+method-specific measurements from a sampled record remain together. The table
+reports percentile intervals from the deterministic bootstrap implemented in
+the paper asset script.
+
+\input{tables/appendix_paired_bootstrap}
+
+\subsection{Worked Frozen Record and Path Labels}
+
+The main paper traces one unchanged record from direction-fitting statements to
+target, neighbor, capability, and path labels. Table~\ref{tab:worked-records-appendix}
+adds clean-only, collateral-without-clean, no-effect, and mixed-sign examples.
+The mixed example also illustrates why Clean and damage-any are not
+complements: one sign can contain a clean operating coefficient while
+collateral movement occurs elsewhere on the full path.
+
+\input{tables/appendix_worked_examples}
+
+\section{Additional Prediction Analysis}
+
+Across all cohorts, split types, targets, and both prediction models, adding
+the disjoint weak probe $R$ provides the main predictive gain; we report
+split-specific random-forest results in Table~\ref{tab:split-macro}.
+The frozen primary all-method prediction artifacts use 36,000 logged rows,
+including the matched-random audit entry, alongside 30,000 distinct paths.
+Grouping by record keeps the audit entry within its fold and preserves the
+logged-cohort estimate. Geometry $G$ is outcome-specific within the RFM cohort:
+it improves later enhancement and target-any prediction but reduces
+capability-damage AUROC.
+
+The main paper reports the cross-model summary. Here we provide the principal
+CPU controls, full layer-selection exclusion, weak-response baseline,
+grouped-transfer, and RFM-specific geometry results.
+
+\input{tables/cross_model_replication}
+
+\subsection{Measured-Grid Path Topology}
+
+We recompute descriptive topology on all nonzero measured strengths
+$|\alpha|\in\{0.1,0.25,0.5\}$. Across learned directions, a target crossing
+exists on 7.34\% of paths, a clean coefficient on 6.94\%, and a nonmonotonic
+target-or-damage indicator on 10.90\%; the corresponding random rates are
+5.98\%, 5.55\%, and 10.65\%. Strict target-first and damage-first patterns are
+rare (0.37\% and 0.46\% for learned directions), so they serve as descriptive
+diagnostics alongside the primary prediction targets. Among learned paths with
+any clean coefficient, 76.3\% contain exactly one measured clean coefficient.
+These results support evaluating multiple strengths on the measured grid.
+
+\subsection{Layer-Selection Exclusion and Weak-Response Controls}
+
+The 500 records used to select the two primary blocks are a subset of the
+3,000-record cohort. Removing them leaves 2,500 records and 30,000
+method--block paths. At block 11, all four learned direction families retain
+positive paired Target-any and Clean-any differences from random
+(Table~\ref{tab:pilot-exclusion-outcomes}). The complete record-held-out random
+forest also remains within 0.01 AUROC of its full-cohort estimate on each
+principal outcome (Table~\ref{tab:cpu-prediction-controls}). The exclusion
+analysis therefore preserves both the outcome and prediction estimates after
+removing the layer-selection subset.
+
+The training-free scalar control uses only the signed $|\alpha|=0.1$ response
+matched to each later outcome. The $R$-only random forest instead uses the
+multivariate low-dose response profile. For target and clean outcomes, this
+profile substantially improves over the scalar score; adding base,
+method/block, and static-localization features provides a smaller final AUROC
+gain. We report prevalence and AP alongside AUROC because the positive path
+labels are sparse. AP varies across outcomes, while the structured weak response
+consistently adds ranking information to the prediction task.
+
+\input{tables/appendix_pilot_exclusion_outcomes}
+\input{tables/appendix_cpu_prediction_controls}
+
+\subsection{Grouped Transfer and Geometry}
+
+\input{tables/appendix_split_macro}
+\input{tables/appendix_geometry_ablation}
+
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.82\columnwidth]{figures/prediction_split_robustness.pdf}
+    \caption{Grouped-transfer robustness. Static localization leaves the
+    baseline nearly unchanged, whereas the disjoint weak response produces a
+    large AUROC gain under record-, dataset-, and domain-held-out evaluation.}
+    \label{fig:split-robustness}
+\end{figure}
+
+\section{Multi-Fidelity Strength Selection}
+
+The dense training study contains 500 records, three methods, six layers, and
+27 coefficients, yielding 243,000 raw record-strength rows. A disjoint
+100-record validation study contributes 24,300 raw dense rows. Excluding the
+zero coefficient leaves 234,000 dense training candidates and 23,400 validation
+candidates. Multi-fidelity training adds 2,400 non-overlapping records with
+sparse trajectories, for 2,900 training records and 320,400 nonzero candidate
+rows; validation overlap is zero.
+
+We evaluate selection by held-out policy replay. The global fixed coefficient
+is chosen only from mean utility on the 500-record dense training set, which
+selects $-1$ for suppression and $+1$ for enhancement. For every unseen
+validation path, a learned policy observes metadata, the candidate coefficient,
+and the two $|\alpha|=0.1$ weak responses, then either chooses one coefficient
+or abstains. The measured dense-grid outcome at the selected coefficient is
+revealed only after this decision, keeping the validation response curve outside
+selector and fixed-baseline tuning.
+
+Without a weak response, the multi-fidelity $B+M+A$ gradient-boosted decision
+tree (GBDT) reaches clean-alpha
+AUROC $0.610$ and AP $0.087$. Adding $R$ raises the $M+A+R$ model to AUROC
+$0.849$ and AP $0.323$; adding $B$ or $L$ after $R$ adds no consistent ranking
+gain. For the same $M+A+R$ model, multi-fidelity
+training increases held-out clean rate over dense-only training by 1.0 point
+for suppression and 0.8 points for enhancement, while utility changes by less
+than $0.001$.
+
+The practical gain comes from risk-aware selection rather than uniformly higher
+clean rates (Table~\ref{tab:strength-selector}). No intervention has zero
+utility by construction, while the train-tuned fixed $|\alpha|=1$ policy has
+negative utility in both directions. The multi-fidelity $M+A+R$ selector abstains on
+45.4\% of suppression paths and 39.1\% of enhancement paths, reducing neighbor
+damage from 6.0\% to 1.8\% and from 5.2\% to 2.2\%, respectively. Both paired
+utility gains over the fixed coefficient are significant. Suppression utility
+is also significantly positive relative to no intervention, whereas the
+enhancement interval against zero overlaps zero
+(Table~\ref{tab:selector-bootstrap}). Its expected cost is 2.55 and 2.61
+intervention evaluations per path, about 90\% fewer than the 26-point nonzero dense scan
+(Table~\ref{tab:strength-efficiency}). A substantial oracle gap remains; the
+selector reduces evaluations while dense evaluation remains useful for final
+audit.
+
+\input{tables/appendix_strength_selector}
+\input{tables/appendix_strength_efficiency}
+\input{tables/appendix_selector_bootstrap}
+\input{tables/appendix_utility_weight_sensitivity}
+
+Selector uncertainty uses records as the sampling unit. We first average the
+nine method--layer paths within each of the 100 validation records, then
+resample records 10,000 times. Utility and damage comparisons are paired
+against the train-tuned fixed policy on the same validation record.
+Table~\ref{tab:utility-weight-sensitivity} varies one utility weight at a time
+and retrains the utility head. All seven configurations retain positive paired
+gains over the fixed policy and reduce neighbor damage. The declared weights are
+one stable configuration for this within-study risk objective; deployment
+requires recalibration.
+
+\section{Free-Generation Endpoint Stress Tests}
+
+The free-generation studies cover four directions, two aligned layers, and
+coefficients from $-1$ to $1$. On Qwen3.5, the unmatched raw-alpha stress test
+changes roughly half of nonzero-strength target generations and produces
+several learned wrong-to-right transitions, while target damage balances or
+exceeds these corrections. On Qwen3-1.7B, decoded text often changes without a
+corresponding target correction. These results place the primary margin-level
+findings in context and motivate future endpoint-oriented evaluation.
+
+\input{tables/appendix_endpoint_validation}
+
+\section{Asset Attribution}
+Figure~1(a,b) contains explanatory imagery and schematic curves rather than
+measured PML activations. The representation imagery adapts Activation Atlas
+by Carter et al. (CC BY 4.0); the selected-block illustration in panel (a)
+adapts Deep Learning Visuals by David V. Godoy (CC BY 4.0).
+Quantitative figures are generated from the frozen experimental results.

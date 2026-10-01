@@ -1,0 +1,10 @@
+source_key,source_label,citation_key,records
+TIGER-Lab/MMLU-Pro,MMLU-Pro,wang2024mmlupro,1029
+edinburgh-dawg/mmlu-redux-2.0,MMLU-Redux 2.0,gema2024mmluredux,571
+allenai/ai2_arc,AI2 ARC,clark2018arc,350
+allenai/openbookqa,OpenBookQA,mihaylov-etal-2018-suit,200
+allenai/sciq,SciQ,welbl-etal-2017-crowdsourcing,200
+livebench/reasoning,LiveBench reasoning,white2025livebench,200
+Rowan/hellaswag,HellaSwag,zellers-etal-2019-hellaswag,150
+allenai/qasc,QASC,khot2020qasc,150
+livebench/math,LiveBench math,white2025livebench,150

@@ -1,0 +1,25 @@
+model,target,target_label,delta_L_points,delta_R_points
+Qwen3-1.7B-Base,later_suppression_path,Suppression,-2.4112810022016373,24.02636774949962
+Qwen3-1.7B-Base,later_enhancement_path,Enhancement,0.47092827428362183,24.30557410448647
+Qwen3-1.7B-Base,later_target_any_path,Target-any,1.5116659020916856,11.914529883795543
+Qwen3-1.7B-Base,later_neighbor_damage_any_path,Neighbor damage,-0.8933620821187094,27.20066345877562
+Qwen3-1.7B-Base,later_capability_damage_any_path,Capability damage,-0.23375244790579952,28.659870513319873
+Qwen3-1.7B-Base,later_clean_suppression_path,Clean suppression,0.15652046461011038,23.03628345211489
+Qwen3-1.7B-Base,later_clean_enhancement_path,Clean enhancement,0.5338436211016928,23.106822359458302
+Qwen3-1.7B-Base,later_clean_any_path,Clean-any,-0.059400807159959435,11.33957925908925
+Qwen3.5-2B-Base,later_suppression_path,Suppression,2.0224209119185654,15.715360311179449
+Qwen3.5-2B-Base,later_enhancement_path,Enhancement,0.4335021152900187,16.70892420621435
+Qwen3.5-2B-Base,later_target_any_path,Target-any,1.0869701189556658,8.340230206027044
+Qwen3.5-2B-Base,later_neighbor_damage_any_path,Neighbor damage,-0.5735356436550432,28.909999381083917
+Qwen3.5-2B-Base,later_capability_damage_any_path,Capability damage,2.187293964571302,28.746788719915873
+Qwen3.5-2B-Base,later_clean_suppression_path,Clean suppression,2.4601597275409004,15.655077853032696
+Qwen3.5-2B-Base,later_clean_enhancement_path,Clean enhancement,1.4825958416292528,15.364773599361925
+Qwen3.5-2B-Base,later_clean_any_path,Clean-any,1.4555047661841236,7.44715685010946
+Ministral-3-3B-Base-2512,later_suppression_path,Suppression,2.801886668061959,17.56027765248611
+Ministral-3-3B-Base-2512,later_enhancement_path,Enhancement,2.1231614354343398,15.525293607437717
+Ministral-3-3B-Base-2512,later_target_any_path,Target-any,2.0176498084095273,8.748925278293939
+Ministral-3-3B-Base-2512,later_neighbor_damage_any_path,Neighbor damage,0.7921006465885005,25.636382162486736
+Ministral-3-3B-Base-2512,later_capability_damage_any_path,Capability damage,0.0553491099908765,23.05419174951008
+Ministral-3-3B-Base-2512,later_clean_suppression_path,Clean suppression,4.335264039284925,17.62293548555145
+Ministral-3-3B-Base-2512,later_clean_enhancement_path,Clean enhancement,2.644218798018183,15.660637398800048
+Ministral-3-3B-Base-2512,later_clean_any_path,Clean-any,2.546304084666362,7.687174287516596

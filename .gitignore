@@ -29,3 +29,29 @@ directions_for_v2_paper/
 notebooks/reviews.ipynb
 notebooks/politics.ipynb
 notebooks/harmful.ipynb
+
+models/
+model/
+
+# PML release hygiene: keep generated experiments and local environments out
+# of the outer repository. Curated paper assets and frozen input data are
+# added explicitly when a release commit is prepared.
+pml/results/
+pml/**/__pycache__/
+pml/paper/**/build_*/
+pml/paper/**/dist/
+pml/paper/**/ccfa-review-reports/
+pml/paper/**/*.aux
+pml/paper/**/*.bbl
+pml/paper/**/*.blg
+pml/paper/**/*.fdb_latexmk
+pml/paper/**/*.fls
+pml/paper/**/*.log
+pml/paper/**/cross_model_watch.lock
+pml/paper/**/cross_model_watch.log
+pml/**/*.zip
+.TinyTeX/
+.lark-slides/
+Tomie56.github.io/
+base.json
+*.log
